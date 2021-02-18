@@ -57,7 +57,9 @@ async def variable(var):
         else:
             configvars = heroku_var.to_dict()
             if BOTLOG:
-                msg = "".join(f"`{item}` = `{configvars[item]}`\n" for item in configvars)
+                msg = ""
+                for item in configvars:
+                    msg += f"`{item}` = `{configvars[item]}`\n"
                 await var.client.send_message(
                     BOTLOG_CHATID, "#CONFIGVARS\n\n"
                     "**ConfigVars**:\n"
@@ -95,22 +97,24 @@ async def set_var(var):
     await var.edit("**Setting ConfigVar...**")
     variable = var.pattern_match.group(1)
     value = var.pattern_match.group(2)
-    if BOTLOG:
-        if variable in heroku_var:
+    if variable in heroku_var:
+        if BOTLOG:
             await var.client.send_message(
                 BOTLOG_CHATID,
                 "#SETCONFIGVAR\n\n"
                 "**Change ConfigVar**:\n"
                 f"`{variable}` = `{value}`",
             )
-        else:
+        await var.edit("**Successfully set ConfigVar.**")
+    else:
+        if BOTLOG:
             await var.client.send_message(
                 BOTLOG_CHATID,
                 "#ADDCONFIGVAR\n\n"
                 "**Add ConfigVar**:\n"
                 f"`{variable}` = `{value}`",
             )
-    await var.edit("**Successfully set ConfigVar.**")
+        await var.edit("**Successfully set ConfigVar.**")
     heroku_var[variable] = value
 
 

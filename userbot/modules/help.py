@@ -23,11 +23,13 @@ async def help(event):
         else:
             await event.edit("Please specify a valid module name.")
     else:
+        temp = ""
         final = "**List of all loaded module(s)**\n\
                  \nSpecify which module do you want help for! \
                  \n**Usage:** `.help` <module name>\n\n"
 
-        temp = "".join(str(i) + " " for i in CMD_HELP)
+        for i in CMD_HELP:
+            temp += str(i) + " "
         temp = sorted(temp.split())
         for i in temp:
             final += "`" + str(i)
