@@ -64,7 +64,7 @@ def register(**args):
                 return
 
             if groups_only and not check.is_group:
-                await check.respond("`I don't think this is a group.`")
+                await check.respond("`Eu não acho que isso seja um grupo.`")
                 return
 
             if check.via_bot_id and not insecure and check.out:

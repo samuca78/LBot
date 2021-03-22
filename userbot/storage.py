@@ -34,7 +34,7 @@ class Storage:
 
     def __getattr__(self, name):
         if name.startswith("_"):
-            raise ValueError("You can only access existing private members")
+            raise ValueError("Você só pode acessar membros privados existentes")
         return self._data.get(name, None)
 
     def __setattr__(self, name, value):
