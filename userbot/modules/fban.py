@@ -12,7 +12,7 @@ async def fban(event):
     try:
         from userbot.modules.sql_helper.fban_sql import get_flist
     except IntegrityError:
-        return await event.edit("**Running on Non-SQL mode!**")
+        return await event.edit("**Executando em modo não SQL!**")
 
     if event.is_reply:
         reply_msg = await event.get_reply_message()
@@ -30,11 +30,11 @@ async def fban(event):
 
     if event.sender_id == fban_id:
         return await event.edit(
-            "**Error: This action has been prevented by KensurBot self preservation protocols.**"
+            "**Erro: Esta ação foi impedida pelos protocolos de autopreservação KensurBot.**"
         )
 
     if len(fed_list := get_flist()) == 0:
-        return await event.edit("**You haven't connected to any federations yet!**")
+        return await event.edit("**Você ainda não se conectou a nenhuma federação!**")
 
     user_link = f"[{fban_id}](tg://user?id={fban_id})"
 
@@ -63,17 +63,17 @@ async def fban(event):
         except BaseException:
             failed.append(i.fed_name)
 
-    reason = reason if reason else "Not specified."
+    reason = reason if reason else "Não especificado."
 
     if failed:
-        status = f"Failed to fban in {len(failed)}/{total} feds.\n"
+        status = f"Falhou no FedBan em {len(failed)}/{total} federações.\n"
         for i in failed:
             status += "• " + i + "\n"
     else:
-        status = f"Success! Fbanned in {total} feds."
+        status = f"Sucesso! FedBanned em {total} federações."
 
     await event.edit(
-        f"**Fbanned **{user_link}!\n**Reason:** {reason}\n**Status:** {status}"
+        f"**FedBanned **{user_link}!\n**Reason:** {reason}\n**Status:** {status}"
     )
 
 
@@ -83,7 +83,7 @@ async def unfban(event):
     try:
         from userbot.modules.sql_helper.fban_sql import get_flist
     except IntegrityError:
-        return await event.edit("**Running on Non-SQL mode!**")
+        return await event.edit("**Executando em modo não SQL!**")
 
     if event.is_reply:
         reply_msg = await event.get_reply_message()
@@ -100,10 +100,10 @@ async def unfban(event):
         pass
 
     if event.sender_id == unfban_id:
-        return await event.edit("**Wait, that's illegal**")
+        return await event.edit("**Espere, isso é ilegal**")
 
     if len(fed_list := get_flist()) == 0:
-        return await event.edit("**You haven't connected to any federations yet!**")
+        return await event.edit("**Você ainda não se conectou a nenhuma federação!**")
 
     user_link = f"[{unfban_id}](tg://user?id={unfban_id})"
 
@@ -131,14 +131,14 @@ async def unfban(event):
         except BaseException:
             failed.append(i.fed_name)
 
-    reason = reason if reason else "Not specified."
+    reason = reason if reason else "Não especificado."
 
     if failed:
-        status = f"Failed to un-fban in {len(failed)}/{total} feds.\n"
+        status = f"Falhei em un-fban in {len(failed)}/{total} federações.\n"
         for i in failed:
             status += "• " + i + "\n"
     else:
-        status = f"Success! Un-fbanned in {total} feds."
+        status = f"Sucesso! Un-fbanned in {total} federações."
 
     reason = reason if reason else "Not specified."
     await event.edit(
@@ -152,19 +152,19 @@ async def addf(event):
     try:
         from userbot.modules.sql_helper.fban_sql import add_flist
     except IntegrityError:
-        return await event.edit("**Running on Non-SQL mode!**")
+        return await event.edit("**Executando em modo não SQL!**")
 
     if not (fed_name := event.pattern_match.group(1)):
-        return await event.edit("**Pass a name in order connect to this group!**")
+        return await event.edit("**Passe um nome para se conectar a este grupo!**")
 
     try:
         add_flist(event.chat_id, fed_name)
     except IntegrityError:
         return await event.edit(
-            "**This group is already connected to federations list.**"
+            "**Este grupo já está conectado à lista de federações.**"
         )
 
-    await event.edit("**Added this group to federations list!**")
+    await event.edit("**Adicionado este grupo à lista de federações!**")
 
 
 @register(outgoing=True, pattern=r"^\.delf$")
@@ -173,10 +173,10 @@ async def delf(event):
     try:
         from userbot.modules.sql_helper.fban_sql import del_flist
     except IntegrityError:
-        return await event.edit("**Running on Non-SQL mode!**")
+        return await event.edit("**Executando em modo não SQL!**")
 
     del_flist(event.chat_id)
-    await event.edit("**Removed this group from federations list!**")
+    await event.edit("**Removido este grupo da lista de federações!**")
 
 
 @register(outgoing=True, pattern=r"^\.listf$")
@@ -185,12 +185,12 @@ async def listf(event):
     try:
         from userbot.modules.sql_helper.fban_sql import get_flist
     except IntegrityError:
-        return await event.edit("**Running on Non-SQL mode!**")
+        return await event.edit("**Executando em modo não SQL!**")
 
     if len(fed_list := get_flist()) == 0:
         return await event.edit("**You haven't connected to any federations yet!**")
 
-    msg = "**Connected federations:**\n\n"
+    msg = "**Federações conectadas:**\n\n"
 
     for i in fed_list:
         msg += "• " + str(i.fed_name) + "\n"
@@ -204,27 +204,27 @@ async def clearf(event):
     try:
         from userbot.modules.sql_helper.fban_sql import del_flist_all
     except IntegrityError:
-        return await event.edit("**Running on Non-SQL mode!**")
+        return await event.edit("**Executando em modo não SQL!**")
 
     del_flist_all()
-    await event.edit("**Disconnected from all connected federations!**")
+    await event.edit("**Desconectado de todas as federações conectadas!**")
 
 
 CMD_HELP.update(
     {
         "fban": ">`.fban <id/username> <reason>`"
-        "\nUsage: Bans user from connected federations."
-        "\nYou can reply to the user whom you want to fban or manually pass the username/id."
+        "\nUso: Bane o usuário de federações conectadas."
+        "\nVocê pode responder ao usuário que deseja fban ou passar manualmente o nome de usuário / id."
         "\n\n`>.unfban <id/username> <reason>`"
-        "\nUsage: Same as fban but unbans the user"
+        "\nUso: o mesmo que fban, mas não transmite o usuário"
         "\n\n>`.addf <name>`"
-        "\nUsage: Adds current group and stores it as <name> in connected federations."
-        "\nAdding one group is enough for one federation."
+        "\nUso: Adiciona o grupo atual e o armazena como <nome> nas federações conectadas."
+        "\nAdicionar um grupo é suficiente para uma federação."
         "\n\n>`.delf`"
-        "\nUsage: Removes current group from connected federations."
+        "\nUso: remove o grupo atual das federações conectadas."
         "\n\n>`.listf`"
-        "\nUsage: Lists all connected federations by specified name."
+        "\nUso: Lista todas as federações conectadas por nome especificado. "
         "\n\n>`.clearf`"
-        "\nUsage: Disconnects from all connected federations. Use it carefully."
+        "\nUso: Desconecta de todas as federações conectadas. Use-o com cuidado."
     }
 )
