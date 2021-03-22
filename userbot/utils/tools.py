@@ -14,8 +14,11 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+
+import asyncio
 import hashlib
 import re
+from typing import Union
 
 
 async def md5(fname: str) -> str:
@@ -26,11 +29,11 @@ async def md5(fname: str) -> str:
     return hash_md5.hexdigest()
 
 
-def humanbytes(size: int) -> str:
+def humanbytes(size: Union[int, float]) -> str:
     if size is None or isinstance(size, str):
         return ""
 
-    power = 2**10
+    power = 2 ** 10
     raised_to_pow = 0
     dict_power_n = {0: "", 1: "Ki", 2: "Mi", 3: "Gi", 4: "Ti"}
     while size > power:
@@ -43,21 +46,23 @@ def time_formatter(seconds: int) -> str:
     minutes, seconds = divmod(seconds, 60)
     hours, minutes = divmod(minutes, 60)
     days, hours = divmod(hours, 24)
-    tmp = (((str(days) + " day(s), ") if days else "") +
-           ((str(hours) + " hour(s), ") if hours else "") +
-           ((str(minutes) + " minute(s), ") if minutes else "") +
-           ((str(seconds) + " second(s), ") if seconds else ""))
+    tmp = (
+        ((str(days) + " day(s), ") if days else "")
+        + ((str(hours) + " hour(s), ") if hours else "")
+        + ((str(minutes) + " minute(s), ") if minutes else "")
+        + ((str(seconds) + " second(s), ") if seconds else "")
+    )
     return tmp[:-2]
 
 
 def human_to_bytes(size: str) -> int:
     units = {
-        "M": 2**20,
-        "MB": 2**20,
-        "G": 2**30,
-        "GB": 2**30,
-        "T": 2**40,
-        "TB": 2**40,
+        "M": 2 ** 20,
+        "MB": 2 ** 20,
+        "G": 2 ** 30,
+        "GB": 2 ** 30,
+        "T": 2 ** 40,
+        "TB": 2 ** 40,
     }
 
     size = size.upper()
@@ -65,3 +70,15 @@ def human_to_bytes(size: str) -> int:
         size = re.sub(r"([KMGT])", r" \1", size)
     number, unit = [string.strip() for string in size.split()]
     return int(float(number) * units[unit])
+
+
+async def run_cmd(cmd: list) -> tuple[bytes, bytes]:
+    process = await asyncio.create_subprocess_exec(
+        *cmd,
+        stdout=asyncio.subprocess.PIPE,
+        stderr=asyncio.subprocess.PIPE,
+    )
+    out, err = await process.communicate()
+    t_resp = out.strip()
+    e_resp = err.strip()
+    return t_resp, e_resp

@@ -50,9 +50,8 @@ def register(**args):
     if "insecure" in args:
         del args["insecure"]
 
-    if pattern:
-        if not ignore_unsafe:
-            args["pattern"] = pattern.replace("^.", unsafe_pattern, 1)
+    if pattern and not ignore_unsafe:
+        args["pattern"] = pattern.replace("^.", unsafe_pattern, 1)
 
     def decorator(func):
         async def wrapper(check):
@@ -60,10 +59,6 @@ def register(**args):
                 # Messages sent in channels can be edited by other users.
                 # Ignore edits that take place in channels.
                 return
-            if not LOGSPAMMER:
-                check.chat_id
-            else:
-                pass
 
             if not trigger_on_fwd and check.fwd_from:
                 return
@@ -124,18 +119,16 @@ def register(**args):
 
                     ftext += "\n\n\nLast 10 commits:\n"
 
-                    process = await asyncsubshell(command,
-                                                  stdout=asyncsub.PIPE,
-                                                  stderr=asyncsub.PIPE)
+                    process = await asyncsubshell(
+                        command, stdout=asyncsub.PIPE, stderr=asyncsub.PIPE
+                    )
                     stdout, stderr = await process.communicate()
-                    result = str(stdout.decode().strip()) + \
-                        str(stderr.decode().strip())
+                    result = str(stdout.decode().strip()) + str(stderr.decode().strip())
 
                     ftext += result
 
-                    file = open("error.log", "w+")
-                    file.write(ftext)
-                    file.close()
+                    with open("error.log", "w+") as file:
+                        file.write(ftext)
 
                     if LOGSPAMMER:
                         await check.client.send_file(

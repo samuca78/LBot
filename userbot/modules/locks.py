@@ -69,8 +69,7 @@ async def locks(event):
     else:
         if not input_str:
             return await event.edit("**I can't lock nothing!**")
-        else:
-            return await event.edit(f"**Invalid lock type:** `{input_str}`")
+        return await event.edit(f"**Invalid lock type:** `{input_str}`")
 
     lock_rights = ChatBannedRights(
         until_date=None,
@@ -87,12 +86,13 @@ async def locks(event):
     )
     try:
         await event.client(
-            EditChatDefaultBannedRightsRequest(peer=peer_id,
-                                               banned_rights=lock_rights))
+            EditChatDefaultBannedRightsRequest(peer=peer_id, banned_rights=lock_rights)
+        )
         await event.edit(f"**Locked {what} for this chat!**")
     except BaseException as e:
         return await event.edit(
-            f"**Do I have proper rights for that ??**\nError: `{str(e)}`")
+            f"**Do I have proper rights for that ??**\nError: `{str(e)}`"
+        )
 
 
 @register(outgoing=True, pattern=r"^\.unlock ?(.*)")
@@ -154,8 +154,7 @@ async def rem_locks(event):
     else:
         if not input_str:
             return await event.edit("**I can't unlock nothing!**")
-        else:
-            return await event.edit(f"**Invalid unlock type:** `{input_str}`")
+        return await event.edit(f"**Invalid unlock type:** `{input_str}`")
 
     unlock_rights = ChatBannedRights(
         until_date=None,
@@ -172,19 +171,23 @@ async def rem_locks(event):
     )
     try:
         await event.client(
-            EditChatDefaultBannedRightsRequest(peer=peer_id,
-                                               banned_rights=unlock_rights))
+            EditChatDefaultBannedRightsRequest(
+                peer=peer_id, banned_rights=unlock_rights
+            )
+        )
         await event.edit(f"**Unlocked {what} for this chat!**")
     except BaseException as e:
         return await event.edit(
-            f"**Do I have proper rights for that ??**\nError: `{str(e)}`")
+            f"**Do I have proper rights for that ??**\nError: `{str(e)}`"
+        )
 
 
-CMD_HELP.update({
-    "locks":
-    ">`.lock <all (or) type(s)>` or >`.unlock <all (or) type(s)>`"
-    "\nUsage: Allows you to lock/unlock some common message types in the chat."
-    "\n[NOTE: Requires proper admin rights in the chat !!]"
-    "\n\nAvailable message types to lock/unlock are: "
-    "\n`all, msg, media, sticker, gif, game, inline, poll, invite, pin, info`"
-})
+CMD_HELP.update(
+    {
+        "locks": ">`.lock <all (or) type(s)>` or >`.unlock <all (or) type(s)>`"
+        "\nUsage: Allows you to lock/unlock some common message types in the chat."
+        "\n[NOTE: Requires proper admin rights in the chat !!]"
+        "\n\nAvailable message types to lock/unlock are: "
+        "\n`all, msg, media, sticker, gif, game, inline, poll, invite, pin, info`"
+    }
+)

@@ -14,7 +14,7 @@ async def _(event):
     if event.fwd_from:
         return
     chat = "@SpotifyNowBot"
-    now = f"/now"
+    now = "/now"
     await event.edit("**Processing...**")
     try:
         async with event.client.conversation(chat) as conv:
@@ -31,29 +31,28 @@ async def _(event):
                     "**You're not listening to anything on Spotify at the moment.**"
                 )
                 return
-            else:
-                downloaded_file_name = await event.client.download_media(
-                    response.media, TEMP_DOWNLOAD_DIRECTORY)
-                link = response.reply_markup.rows[0].buttons[0].url
-                await event.client.send_file(
-                    event.chat_id,
-                    downloaded_file_name,
-                    force_document=False,
-                    caption=f"[Play on Spotify]({link})",
-                )
-                """ - cleanup chat after completed - """
-                await event.client.delete_messages(conv.chat_id,
-                                                   [msg.id, response.id])
+            downloaded_file_name = await event.client.download_media(
+                response.media, TEMP_DOWNLOAD_DIRECTORY
+            )
+            link = response.reply_markup.rows[0].buttons[0].url
+            await event.client.send_file(
+                event.chat_id,
+                downloaded_file_name,
+                force_document=False,
+                caption=f"[Play on Spotify]({link})",
+            )
+            """ - cleanup chat after completed - """
+            await event.client.delete_messages(conv.chat_id, [msg.id, response.id])
     except TimeoutError:
-        return await event.edit(
-            "**Error:** @SpotifyNowBot **is not responding.**")
+        return await event.edit("**Error:** @SpotifyNowBot **is not responding.**")
     await event.delete()
     return os.remove(downloaded_file_name)
 
 
-CMD_HELP.update({
-    "spotifynow":
-    ">`.spotnow`"
-    "\nUsage: Show what you're listening on spotify."
-    "\n@SpotifyNowBot"
-})
+CMD_HELP.update(
+    {
+        "spotifynow": ">`.spotnow`"
+        "\nUsage: Show what you're listening on spotify."
+        "\n@SpotifyNowBot"
+    }
+)
