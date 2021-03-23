@@ -30,7 +30,7 @@ async def fban(event):
 
     if event.sender_id == fban_id:
         return await event.edit(
-            "**Erro: Esta ação foi impedida pelos protocolos de autopreservação KensurBot.**"
+            "**Erro: Esta ação foi impedida pelos protocolos de autopreservação.**"
         )
 
     if len(fed_list := get_flist()) == 0:
@@ -38,7 +38,7 @@ async def fban(event):
 
     user_link = f"[{fban_id}](tg://user?id={fban_id})"
 
-    await event.edit(f"**Fbanning** {user_link}...")
+    await event.edit(f"**Fbanindo** {user_link}...")
     failed = []
     total = int(0)
 
@@ -66,14 +66,14 @@ async def fban(event):
     reason = reason if reason else "Não especificado."
 
     if failed:
-        status = f"Falhou no FedBan em {len(failed)}/{total} federações.\n"
+        status = f"Falha no FBan em {len(failed)}/{total} federações.\n"
         for i in failed:
             status += "• " + i + "\n"
     else:
-        status = f"Sucesso! FedBanned em {total} federações."
+        status = f"Sucesso! FBanido em {total} federações."
 
     await event.edit(
-        f"**FedBanned **{user_link}!\n**Reason:** {reason}\n**Status:** {status}"
+        f"**FBanido **{user_link}!\n**Motivo:** {reason}\n**Status:** {status}"
     )
 
 
@@ -107,7 +107,7 @@ async def unfban(event):
 
     user_link = f"[{unfban_id}](tg://user?id={unfban_id})"
 
-    await event.edit(f"**Un-fbanning **{user_link}**...**")
+    await event.edit(f"**Un-fbanindo **{user_link}**...**")
     failed = []
     total = int(0)
 
@@ -134,15 +134,15 @@ async def unfban(event):
     reason = reason if reason else "Não especificado."
 
     if failed:
-        status = f"Falhei em un-fban in {len(failed)}/{total} federações.\n"
+        status = f"Falha ao un-fbanir em {len(failed)}/{total} federações.\n"
         for i in failed:
             status += "• " + i + "\n"
     else:
-        status = f"Sucesso! Un-fbanned in {total} federações."
+        status = f"Sucesso! Un-fbanido em {total} federações."
 
     reason = reason if reason else "Not specified."
     await event.edit(
-        f"**Un-fbanned** {user_link}!\n**Reason:** {reason}\n**Status:** {status}"
+        f"**Un-fbanido** {user_link}!\n**Motivo:** {reason}\n**Status:** {status}"
     )
 
 
@@ -188,7 +188,7 @@ async def listf(event):
         return await event.edit("**Executando em modo não SQL!**")
 
     if len(fed_list := get_flist()) == 0:
-        return await event.edit("**You haven't connected to any federations yet!**")
+        return await event.edit("**Você ainda não se conectou a nenhuma federação!**")
 
     msg = "**Federações conectadas:**\n\n"
 
@@ -212,16 +212,16 @@ async def clearf(event):
 
 CMD_HELP.update(
     {
-        "fban": ">`.fban <id/username> <reason>`"
+        "fban": ">`.fban <id/nome de usuário> <motivo>`"
         "\nUso: Bane o usuário de federações conectadas."
-        "\nVocê pode responder ao usuário que deseja fban ou passar manualmente o nome de usuário / id."
-        "\n\n`>.unfban <id/username> <reason>`"
-        "\nUso: o mesmo que fban, mas não transmite o usuário"
+        "\nVocê pode responder ao usuário que deseja fbanir ou passar manualmente o nome de usuário/id."
+        "\n\n`>.unfban <id/nome de usuário> <motivo>`"
+        "\nUso: O mesmo que fban, mas desbane o usuário"
         "\n\n>`.addf <name>`"
         "\nUso: Adiciona o grupo atual e o armazena como <nome> nas federações conectadas."
         "\nAdicionar um grupo é suficiente para uma federação."
         "\n\n>`.delf`"
-        "\nUso: remove o grupo atual das federações conectadas."
+        "\nUso: Remove o grupo atual das federações conectadas."
         "\n\n>`.listf`"
         "\nUso: Lista todas as federações conectadas por nome especificado. "
         "\n\n>`.clearf`"
