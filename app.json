@@ -1,6 +1,6 @@
 {
   "name": "PurpleBot",
-  "descrição": "[PurpleBot] Um userbot modular do Telegram em execução no Python 3.8 com um banco de dados sqlalchemy.",
+  "description": "[PurpleBot] Um userbot modular do Telegram em execução no Python 3.8 com um banco de dados sqlalchemy.",
   "logo": "#",
   "keywords": ["telegram", "userbot", "plugin", "modular", "productivity"],
   "repository": "https://github.com/thewhiteharlot/PurpleBotKEN",
@@ -9,131 +9,131 @@
   "stack": "container",
   "env": {
     "ALIVE_NAME": {
-      "Descrição": "Define o seu nome que será exibido nas mensagens .alive, etc.."
+      "description": "Define o seu nome que será exibido nas mensagens .alive, etc.."
     },
     "API_KEY": {
-      "descrição": "Obtenha este valor em my.telegram.org."
+      "description": "Obtenha este valor em my.telegram.org."
     },
     "API_HASH": {
-      "descrição": "Obtenha este valor em my.telegram.org."
+      "description": "Obtenha este valor em my.telegram.org."
     },
     "STRING_SESSION": {
-      "descrição": "Obtenha este valor executando [python3 string_session.py] no Termux ou sistema local."
+      "description": "Obtenha este valor executando [python3 string_session.py] no Termux ou sistema local."
     },
     "HEROKU_API_KEY": {
-      "descrição": "Sua chave de API do Heroku, obtenha em 'https://dashboard.heroku.com/account'"
+      "description": "Sua chave de API do Heroku, obtenha em 'https://dashboard.heroku.com/account'"
     },
     "HEROKU_APP_NAME": {
-      "descrição": "Adicione o nome do aplicativo Heroku aqui. Isso ajuda com as atualizações do userbot."
+      "description": "Adicione o nome do aplicativo Heroku aqui. Isso ajuda com as atualizações do userbot."
     },
     "COUNTRY": {
-      "descrição": "Defina seu país para ser usado nos comandos .time e .date.",
+      "description": "Defina seu país para ser usado nos comandos .time e .date.",
       "required": false
     },
     "TZ_NUMBER": {
-      "descrição": "Altere este valor caso seu país tenha vários fusos horários.",
+      "description": "Altere este valor caso seu país tenha vários fusos horários.",
       "value": "1",
       "required": false
     },
     "CHROME_DRIVER": {
-      "descrição": "Localização do ChromeDriver para módulos baseados em selenium.",
+      "description": "Localização do ChromeDriver para módulos baseados em selenium.",
       "value": "/usr/bin/chromedriver",
       "required": false
     },
     "GOOGLE_CHROME_BIN": {
-      "descrição": "Google Chrome (ou) localização binária do Chromium para módulos baseados em selenium.",
+      "description": "Google Chrome (ou) localização binária do Chromium para módulos baseados em selenium.",
       "value": "/usr/bin/chromium-browser",
       "required": false
     },
     "OPEN_WEATHER_MAP_APPID": {
-      "descrição": "Obtenha seu próprio APPID (API key) de https://api.openweathermap.org/data/2.5/weather",
+      "description": "Obtenha seu próprio APPID (API key) de https://api.openweathermap.org/data/2.5/weather",
       "required": false
     },
     "BOTLOG": {
-      "descrição": "Caso você queira desligar o registro, coloque como falso",
+      "description": "Caso você queira desligar o registro, coloque como falso",
       "value": "True"
     },
     "BOTLOG_CHATID": {
-      "descrição": "ChatID do grupo de Logs. Certifique-se de que ninguém mais está neste grupo, exceto você."
+      "description": "ChatID do grupo de Logs. Certifique-se de que ninguém mais está neste grupo, exceto você."
     },
     "CONSOLE_LOGGER_VERBOSE": {
-      "descrição": "Se você precisar de verbose no registro do console",
+      "description": "Se você precisar de verbose no registro do console",
       "value": "False"
     },
     "PM_AUTO_BAN": {
-      "descrição": "Módulo PMPermit, permite aprovar/desaprovar PMs. Usuários não aprovados serão bloqueados após a quinta mensagem.",
+      "description": "Módulo PMPermit, permite aprovar/desaprovar PMs. Usuários não aprovados serão bloqueados após a quinta mensagem.",
       "value": "False"
     },
     "OCR_SPACE_API_KEY": {
-      "descrição": "Chave de API do OCR para comando .ocr. Obtenha em https://ocr.space/ocrapi",
+      "description": "Chave de API do OCR para comando .ocr. Obtenha em https://ocr.space/ocrapi",
       "required": false
     },
     "REM_BG_API_KEY": {
-      "descrição": "Chave API para o comando .rbg. Obtenha em https://www.remove.bg/api",
+      "description": "Chave API para o comando .rbg. Obtenha em https://www.remove.bg/api",
       "required": false
     },
     "ANTI_SPAMBOT": {
-      "descrição": "Remove spambots de grupos depois que eles entram. [Requer permissões de administrador em grupos para remover.]",
+      "description": "Remove spambots de grupos depois que eles entram. [Requer permissões de administrador em grupos para remover.]",
       "value": "False"
     },
     "ANTI_SPAMBOT_SHOUT": {
-      "descrição": "Denuncia spambots para @admins em grupos depois que eles entrarem, apenas no caso de você não ter poderes de administrador para removê-los.",
+      "description": "Denuncia spambots para @admins em grupos depois que eles entrarem, apenas no caso de você não ter poderes de administrador para removê-los.",
       "value": "False"
     },
     "TMP_DOWNLOAD_DIRECTORY": {
-      "descrição": "Local de download para muitos módulos (GDrive, .download etc..)",
+      "description": "Local de download para muitos módulos (GDrive, .download etc..)",
       "value": "./downloads/"
     },
     "CLEAN_WELCOME": {
-      "descrição": "Quando uma nova pessoa entra, a mensagem de boas-vindas antiga é excluída.",
+      "description": "Quando uma nova pessoa entra, a mensagem de boas-vindas antiga é excluída.",
       "value": "True"
     },
     "LASTFM_API": {
-      "descrição": "Chave API para o módulo Last.FM. [Obtenha uma de - https://www.last.fm/api/account/create]",
+      "description": "Chave API para o módulo Last.FM. [Obtenha uma de - https://www.last.fm/api/account/create]",
       "required": false
     },
     "LASTFM_SECRET": {
-      "descrição": "Chave SECRETA para o módulo Last.FM. [Obtenha uma de - https://www.last.fm/api/account/create]",
+      "description": "Chave SECRETA para o módulo Last.FM. [Obtenha uma de - https://www.last.fm/api/account/create]",
       "required": false
     },
     "LASTFM_USERNAME": {
-      "descrição": "Nome de usuário Last.FM",
+      "description": "Nome de usuário Last.FM",
       "required": false
     },
     "LASTFM_PASSWORD": {
-      "descrição": "Senha Last.FM",
+      "description": "Senha Last.FM",
       "required": false
     },
     "BIO_PREFIX": {
-      "descrição": "Prefixo para bio do módulo Last.FM.",
+      "description": "Prefixo para bio do módulo Last.FM.",
       "required": false
     },
     "DEFAULT_BIO": {
-      "descrição": "Biografia de perfil padrão.",
+      "description": "Biografia de perfil padrão.",
       "required": false
     },
     "G_DRIVE_DATA": {
-      "descrição": "Seu client_secret.json.",
+      "description": "Seu client_secret.json.",
       "required": false
     },
     "GENIUS_ACCESS_TOKEN": {
-      "descrição": "Token de acesso do cliente de https://genius.com/api-clients, necessário para o módulo de letras.",
+      "description": "Token de acesso do cliente de https://genius.com/api-clients, necessário para o módulo de letras.",
       "required": false
     },
     "WEATHER_DEFCITY": {
-      "descrição": "Defina a cidade padrão para o módulo de clima do userbot.",
+      "description": "Defina a cidade padrão para o módulo de clima do userbot.",
       "required": false
     },
     "LOGSPAMMER": {
-      "descrição": "Apesar do nome, evita o envio de logs (se houver um acidente) em todos os lugares e armazena em seu grupo de botlog.",
+      "description": "Apesar do nome, evita o envio de logs (se houver um acidente) em todos os lugares e armazena em seu grupo de botlog.",
       "value": "True"
     },
     "DEEZER_ARL_TOKEN": {
-      "descrição": "Coloque seu token Deezer ARL aqui.",
+      "description": "Coloque seu token Deezer ARL aqui.",
       "required": false
     },
     "USR_TOKEN_UPTOBOX": {
-      "descrição": "API para uptobox de link direto, https://docs.uptobox.com/#how-to-find-my-api-token",
+      "description": "API para uptobox de link direto, https://docs.uptobox.com/#how-to-find-my-api-token",
       "required": false
     }
   },
