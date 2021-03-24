@@ -11,6 +11,10 @@
     "ALIVE_NAME": {
       "description": "Define o seu nome que será exibido nas mensagens .alive, etc.."
     },
+    "ALIVE_LOGO": {
+      "description": "Mostrar imagem/logotipo na mensagem .alive. Preencha o valor com o link da sua imagem, use o telegra.ph/i.ibb.co para obter sua própria imagem",
+      "required": false
+    },
     "API_KEY": {
       "description": "Obtenha este valor em my.telegram.org."
     },
