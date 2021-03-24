@@ -41,7 +41,7 @@ async def webupload(event):
             full_file_path=file_name, bare_local_name=filename
         )
     except KeyError:
-        await event.edit("**Invalid selction.**")
+        await event.edit("**Seleção inválida.**")
         return
     cmd = selected_one
     # start the subprocess $SHELL
@@ -62,8 +62,8 @@ async def webupload(event):
 
 CMD_HELP.update(
     {
-        "webupload": ">`.web` <server>"
-        "\nServer List: anonfiles|transfer|filebin|anonymousfiles|megaupload|bayfiles|lestupload|0x0"
-        "\nUso: Reply to a file to upload it to one of the above servers."
+        "webupload": ">`.web` <servidor>"
+        "\nLista de servidores: anonfiles|transfer|filebin|anonymousfiles|megaupload|bayfiles|lestupload|0x0"
+        "\nUso: Responda a um arquivo para enviá-lo a um dos servidores acima."
     }
 )

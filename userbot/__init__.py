@@ -96,6 +96,9 @@ OCR_SPACE_API_KEY = os.environ.get("OCR_SPACE_API_KEY") or None
 # Default .alive name
 ALIVE_NAME = str(os.environ.get("ALIVE_NAME")) or None
 
+# Default .alive logo
+ALIVE_LOGO = os.environ.get("ALIVE_LOGO") or None
+
 # remove.bg API key
 REM_BG_API_KEY = os.environ.get("REM_BG_API_KEY") or None
 
@@ -222,10 +225,11 @@ async def send_alive_status():
     if BOTLOG_CHATID and LOGSPAMMER:
         DEFAULTUSER = ALIVE_NAME or "Defina a ConfigVar `ALIVE_NAME`!"
         message = (
-            f"**PurpleBot2 v{KENSURBOT_VERSION} está funcionando normalmente!**\n\n"
-            f"**Telethon:** {version.__version__}\n"
-            f"**Python:** {python_version()}\n"
-            f"**Usuário:** {DEFAULTUSER}"
+            "`➖➖➖➖➖➖➖➖➖➖➖`\n"
+            f"•  👾 `PurpleBot : v{KENSURBOT_VERSION} `\n"
+            f"•  ⚙️ `Telethon  : v{version.__version__} `\n"
+            f"•  🐍 `Python    : v{python_version()} `\n"
+            f"•  👤 `Usuário   :`  {DEFAULTUSER} "
         )
         await bot.send_message(BOTLOG_CHATID, message)
         return True
