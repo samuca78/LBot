@@ -8,7 +8,7 @@
 
 import io
 import sys
-from os import execl
+from os import environ, execle
 from random import randint
 from time import sleep
 
@@ -59,12 +59,12 @@ async def killthebot(event):
 async def killdabot(event):
     await event.edit("**Reiniciando...**")
     if BOTLOG:
-        await event.client.send_message(BOTLOG_CHATID, "#RESTART \n" "Bot reiniciado")
-    await bot.disconnect()
+        await event.client.send_message(
+            BOTLOG_CHATID, "#RESTART \n" "Reiniciando bot..."
+        )
     # Spin a new instance of bot
-    execl(sys.executable, sys.executable, *sys.argv)
-    # Shut the existing one down
-    sys.exit()
+    args = [sys.executable, "-m", "userbot"]
+    execle(sys.executable, *args, environ)
 
 
 @register(outgoing=True, pattern=r"^\.readme$")
