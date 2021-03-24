@@ -13,7 +13,7 @@ from shutil import which
 
 from telethon import version
 
-from userbot import ALIVE_LOGO, ALIVE_NAME, CMD_HELP, KENSURBOT_VERSION, bot
+from userbot import ALIVE_LOGO, ALIVE_NAME, CMD_HELP, PURPLEBOT_VERSION, bot
 from userbot.events import register
 
 # ================= CONSTANT =================
@@ -128,7 +128,7 @@ async def amireallyalive(alive):
     output = (
         "`Tudo funcionando como deveria...`\n"
         "`➖➖➖➖➖➖➖➖➖➖➖`\n"
-        f"•  👾 `PurpleBot : v{KENSURBOT_VERSION} `\n"
+        f"•  👾 `PurpleBot : v{PURPLEBOT_VERSION} `\n"
         f"•  ⚙️ `Telethon  : v{version.__version__} `\n"
         f"•  🐍 `Python    : v{python_version()} `\n"
         f"•  👤 `Usuário   :`  {DEFAULTUSER} "
