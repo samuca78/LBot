@@ -14,7 +14,7 @@ from userbot.events import register
     pattern=r"^\.web ?(.+?|) (anonfiles|transfer|filebin|anonymousfiles|megaupload|bayfiles|letsupload|0x0)",
 )
 async def webupload(event):
-    await event.edit("**Processing...**")
+    await event.edit("**Processando...**")
     input_str = event.pattern_match.group(1)
     selected_transfer = event.pattern_match.group(2)
     if input_str:
@@ -64,6 +64,6 @@ CMD_HELP.update(
     {
         "webupload": ">`.web` <server>"
         "\nServer List: anonfiles|transfer|filebin|anonymousfiles|megaupload|bayfiles|lestupload|0x0"
-        "\nUsage: Reply to a file to upload it to one of the above servers."
+        "\nUso: Reply to a file to upload it to one of the above servers."
     }
 )

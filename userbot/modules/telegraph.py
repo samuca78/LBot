@@ -15,7 +15,7 @@ auth_url = r["auth_url"]
 @register(outgoing=True, pattern=r"^\.telegraph (media|text)$")
 async def telegraphs(graph):
     """ For .telegraph command, upload media & text to telegraph site. """
-    await graph.edit("**Processing...**")
+    await graph.edit("**Processando...**")
     if not graph.text[0].isalpha() and graph.text[0] not in ("/", "#", "@", "!"):
         if graph.fwd_from:
             return
@@ -86,6 +86,6 @@ def resize_image(image):
 CMD_HELP.update(
     {
         "telegraph": ">`.telegraph media|text`"
-        "\nUsage: Upload text & media on Telegraph."
+        "\nUso: Upload text & media on Telegraph."
     }
 )

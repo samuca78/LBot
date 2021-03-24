@@ -214,12 +214,12 @@ async def upstream(event):
 CMD_HELP.update(
     {
         "update": ">`.update`"
-        "\nUsage: Checks if the main userbot repository has any updates "
+        "\nUso: Checks if the main userbot repository has any updates "
         "and shows a changelog if so."
         "\n\n>`.update now`"
-        "\nUsage: Performs a quick update."
+        "\nUso: Performs a quick update."
         "\nHeroku resets updates performed using this method after a while. Use `deploy` instead."
         "\n\n>`.update deploy`"
-        "\nUsage: Performs a full update (recommended)."
+        "\nUso: Performs a full update (recommended)."
     }
 )

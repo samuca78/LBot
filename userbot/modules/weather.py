@@ -143,7 +143,7 @@ async def get_weather(weather):
 CMD_HELP.update(
     {
         "weather": ">`.weather <city> or .weather <city>, <country name/code>`"
-        "\nUsage: Gets the weather of a city."
+        "\nUso: Gets the weather of a city."
         "\nUse `.weather anon` to omit location details in results. (This needs WEATHER_DEFCITY to be set)"
     }
 )

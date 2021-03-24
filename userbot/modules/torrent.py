@@ -50,5 +50,5 @@ async def torrent(event):
 
 
 CMD_HELP.update(
-    {"torrent": ">`.ts` <query>" "\nUsage: Search for torrents of given query"}
+    {"torrent": ">`.ts` <query>" "\nUso: Search for torrents of given query"}
 )

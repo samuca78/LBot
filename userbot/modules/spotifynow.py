@@ -15,7 +15,7 @@ async def _(event):
         return
     chat = "@SpotifyNowBot"
     now = "/now"
-    await event.edit("**Processing...**")
+    await event.edit("**Processando...**")
     try:
         async with event.client.conversation(chat) as conv:
             try:
@@ -52,7 +52,7 @@ async def _(event):
 CMD_HELP.update(
     {
         "spotifynow": ">`.spotnow`"
-        "\nUsage: Show what you're listening on spotify."
+        "\nUso: Show what you're listening on spotify."
         "\n@SpotifyNowBot"
     }
 )

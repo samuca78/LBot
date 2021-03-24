@@ -375,12 +375,12 @@ async def cb_sticker(event):
 CMD_HELP.update(
     {
         "stickers": ">`.kang <emoji>[optional] <pack number>[optional]`"
-        "\nUsage: Adds sticker or image to your userbot pack."
+        "\nUso: Adds sticker or image to your userbot pack."
         "\n\n>`.stkrinfo`"
-        "\nUsage: Gets info about the sticker pack."
+        "\nUso: Gets info about the sticker pack."
         "\n\n>`.getsticker`"
-        "\nUsage: Reply to a sticker to get 'PNG' file of sticker."
+        "\nUso: Reply to a sticker to get 'PNG' file of sticker."
         "\n\n>`.findsticker <name of user or pack>`"
-        "\nUsage: Searches for sticker packs."
+        "\nUso: Searches for sticker packs."
     }
 )

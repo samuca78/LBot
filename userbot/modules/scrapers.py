@@ -57,7 +57,7 @@ async def setlang(prog):
 @register(outgoing=True, pattern=r"^\.carbon")
 async def carbon_api(e):
     """ A Wrapper for carbon.now.sh """
-    await e.edit("**Processing...**")
+    await e.edit("**Processando...**")
     CARBON = "https://carbon.now.sh/?l={lang}&code={code}"
     global CARBONLANG
     textx = await e.get_reply_message()
@@ -122,7 +122,7 @@ async def img_sampler(event):
     if not query:
         return await event.edit("**Reply to a message or pass a query to search!**")
 
-    await event.edit("**Processing...**")
+    await event.edit("**Processando...**")
 
     if event.pattern_match.group(1) != "":
         counter = int(event.pattern_match.group(1))
@@ -198,7 +198,7 @@ async def gsearch(event):
     if not match:
         return await event.edit("**Reply to a message or pass a query to search!**")
 
-    await event.edit("**Processing...**")
+    await event.edit("**Processando...**")
 
     if event.pattern_match.group(1) != "":
         counter = int(event.pattern_match.group(1))
@@ -247,7 +247,7 @@ async def wiki(wiki_q):
     if not match:
         return await wiki_q.edit("**Reply to a message or pass a query to search!**")
 
-    await wiki_q.edit("**Processing...**")
+    await wiki_q.edit("**Processando...**")
 
     try:
         summary(match)
@@ -283,7 +283,7 @@ async def urban_dict(event):
     if not query:
         return await event.edit("**Reply to a message or pass a query to search!**")
 
-    await event.edit("**Processing...**")
+    await event.edit("**Processando...**")
     ud = asyncurban.UrbanDictionary()
     template = "**Query:** `{}`\n\n**Definition:**\n{}\n\n**Example:**\n__{}__"
 
@@ -332,7 +332,7 @@ async def text_to_speech(query):
             "**Give a text or reply to a message for Text-to-Speech!**"
         )
 
-    await query.edit("**Processing...**")
+    await query.edit("**Processando...**")
 
     try:
         from userbot.modules.sql_helper.globals import gvarstatus
@@ -475,7 +475,7 @@ async def translateme(trans):
             "**Give some text or reply to a message to translate!**"
         )
 
-    await trans.edit("**Processing...**")
+    await trans.edit("**Processando...**")
     translator = google_translator()
 
     try:
@@ -563,7 +563,7 @@ async def yt_search(event):
     if not query:
         return await event.edit("**Reply to a message or pass a query to search!**")
 
-    await event.edit("**Processing...**")
+    await event.edit("**Processando...**")
 
     if event.pattern_match.group(1) != "":
         counter = int(event.pattern_match.group(1))
@@ -765,30 +765,30 @@ def deEmojify(inputString):
 CMD_HELP.update(
     {
         "img": ">`.img [count] <query> [or reply]`"
-        "\nUsage: Does an image search on Google."
+        "\nUso: Does an image search on Google."
         "\nCan specify the number of results needed (default is 3).",
         "currency": ">`.currency <amount> <from> <to>`"
-        "\nUsage: Converts various currencies for you.",
+        "\nUso: Converts various currencies for you.",
         "carbon": ">`.carbon <text> [or reply]`"
-        "\nUsage: Beautify your code using carbon.now.sh\n"
+        "\nUso: Beautify your code using carbon.now.sh\n"
         "Use .crblang <text> to set language for your code.",
         "google": ">`.google [count] <query> [or reply]`"
-        "\nUsage: Does a search on Google."
+        "\nUso: Does a search on Google."
         "\nCan specify the number of results needed (default is 3).",
-        "wiki": ">`.wiki <query> [or reply]`" "\nUsage: Does a search on Wikipedia.",
-        "ud": ">`.ud <query> [or reply]`" "\nUsage: Does a search on Urban Dictionary.",
+        "wiki": ">`.wiki <query> [or reply]`" "\nUso: Does a search on Wikipedia.",
+        "ud": ">`.ud <query> [or reply]`" "\nUso: Does a search on Urban Dictionary.",
         "tts": ">`.tts <text> [or reply]`"
-        "\nUsage: Translates text to speech for the language which is set."
+        "\nUso: Translates text to speech for the language which is set."
         "\nUse >`.lang tts <language code>` to set language for tts. (Default is English.)",
         "trt": ">`.trt <text> [or reply]`"
-        "\nUsage: Translates text to the language which is set."
+        "\nUso: Translates text to the language which is set."
         "\nUse >`.lang trt <language code>` to set language for trt. (Default is English)",
         "yt": ">`.yt [count] <query> [or reply]`"
-        "\nUsage: Does a YouTube search."
+        "\nUso: Does a YouTube search."
         "\nCan specify the number of results needed (default is 3).",
-        "imdb": ">`.imdb <movie-name>`" "\nUsage: Shows movie info and other stuff.",
+        "imdb": ">`.imdb <movie-name>`" "\nUso: Shows movie info and other stuff.",
         "rip": ">`.ra <url> [or reply] or .rv <url> [or reply]`"
-        "\nUsage: Download videos and songs from YouTube "
+        "\nUso: Download videos and songs from YouTube "
         "(and [many other sites](https://ytdl-org.github.io/youtube-dl/supportedsites.html)).",
     }
 )

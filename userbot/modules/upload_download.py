@@ -33,7 +33,7 @@ from userbot.utils.FastTelethon import download_file, upload_file
 @register(pattern=r"\.download(?: |$)(.*)", outgoing=True)
 async def download(target_file):
     """ For .download command, download files to the userbot's server. """
-    await target_file.edit("**Processing...**")
+    await target_file.edit("**Processando...**")
     input_str = target_file.pattern_match.group(1)
     if not os.path.isdir(TEMP_DOWNLOAD_DIRECTORY):
         os.makedirs(TEMP_DOWNLOAD_DIRECTORY)
@@ -154,7 +154,7 @@ async def get_video_thumb(file, output):
 
 @register(pattern=r"^\.upload (.*)", outgoing=True)
 async def upload(event):
-    await event.edit("**Processing...**")
+    await event.edit("**Processando...**")
     input_str = event.pattern_match.group(1)
     if os.path.exists(input_str):
         if os.path.isfile(input_str):
@@ -310,8 +310,8 @@ async def upload(event):
 CMD_HELP.update(
     {
         "download": ">`.download <link|filename> or reply to media`"
-        "\nUsage: Downloads file to the server."
+        "\nUso: Downloads file to the server."
         "\n\n>`.upload` <file/folder path in server>"
-        "\nUsage: Uploads a locally stored file/folder to the chat."
+        "\nUso: Uploads a locally stored file/folder to the chat."
     }
 )
