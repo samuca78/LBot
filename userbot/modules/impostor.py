@@ -10,7 +10,7 @@ if not hasattr(STORAGE, "userObj"):
     STORAGE.userObj = False
 
 
-@register(outgoing=True, pattern=r"^\.clone ?(.*)")
+@register(outgoing=True, pattern=r"^\.impostor ?(.*)")
 async def impostor(event):
     inputArgs = event.pattern_match.group(1)
 
@@ -35,7 +35,7 @@ async def impostor(event):
         userObj = await event.client(GetFullUserRequest(replyMessage.sender_id))
     else:
         return await event.edit(
-            "**Consulte** `.help clone` **para aprender como usá-lo.**"
+            "**Use** `.help impersonate` **para aprender como usá-lo.**"
         )
 
     if not STORAGE.userObj:
@@ -45,7 +45,7 @@ async def impostor(event):
 
     await event.edit("**Roubando a identidade dessa pessoa aleatória...**")
     await updateProfile(userObj)
-    await event.edit("**Eu sou você e você sou eu, nós somos um.**")
+    await event.edit("**Eu sou você e você é eu, somos um só.**")
 
 
 async def updateProfile(userObj, restore=False):
@@ -85,11 +85,11 @@ async def updateProfile(userObj, restore=False):
 
 CMD_HELP.update(
     {
-        "clone": ">`.clone` (como uma resposta a uma mensagem de um usuário)\
+        "impostor": ">`.impostor` (como uma resposta a uma mensagem de um usuário)\
     \n**Uso:** Rouba a identidade do usuário.\
-    \n\n>`.clone <nome de usuário/ID>`\
-    \n**Uso:** Rouba a identidade do nome de usuário/ID fornecido.\
-    \n\n>`.clone restore`\
+    \n\n>`.impostor <username/ID>`\
+    \n**Uso:** Rouba do nome de usuário/ID fornecido.\
+    \n\n>`.impostor restore`\
     \n**Uso:** Reverta para sua verdadeira identidade.\
     \n\n**Sempre restaure antes de executá-lo novamente.**\
 "
