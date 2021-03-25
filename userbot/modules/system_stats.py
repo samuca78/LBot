@@ -126,7 +126,6 @@ async def pipcheck(pip):
 async def amireallyalive(alive):
     """ For .alive command, check if the bot is running.  """
     output = (
-        "`Tudo funcionando como deveria...`\n"
         "`➖➖➖➖➖➖➖➖➖➖➖➖`\n"
         f"•  👾 `PurpleBot :`   v{PURPLEBOT_VERSION} \n"
         f"•  ⚙️ `Telethon  :`   v{version.__version__} \n"
