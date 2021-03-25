@@ -225,11 +225,11 @@ async def send_alive_status():
     if BOTLOG_CHATID and LOGSPAMMER:
         DEFAULTUSER = ALIVE_NAME or "Defina a ConfigVar `ALIVE_NAME`!"
         message = (
-            "`➖➖➖➖➖➖➖➖➖➖➖`\n"
-            f"•  👾 `PurpleBot : v{PURPLEBOT_VERSION} `\n"
-            f"•  ⚙️ `Telethon  : v{version.__version__} `\n"
-            f"•  🐍 `Python    : v{python_version()} `\n"
-            f"•  👤 `Usuário   :`  {DEFAULTUSER} "
+            f"👾 **PurpleBot**   ➡️  `{PURPLEBOT_VERSION}` \n"
+            f"⚙️ **Telethon**      ➡️  `{version.__version__}` \n"
+            f"🐍 **Python**        ➡️  `{python_version()}` \n"
+            f"👤 **Usuário**       ➡️   `{DEFAULTUSER}` "
+            "\n\n__Userbot iniciado__ ☑️"
         )
         await bot.send_message(BOTLOG_CHATID, message)
         return True
