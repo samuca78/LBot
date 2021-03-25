@@ -103,7 +103,7 @@ async def set_var(var):
                 BOTLOG_CHATID,
                 "#ADDCONFIGVAR\n\n" "**Adicionada ConfigVar**:\n" f"`{variable}` = `{value}`",
             )
-    await var.edit("**Definida com sucesso a ConfigVar.**")
+    await var.edit("**ConfigVar definida com sucesso.**")
     heroku_var[variable] = value
 
 
