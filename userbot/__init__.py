@@ -227,7 +227,7 @@ async def send_alive_status():
         message = (
             f"👾 **PurpleBot**   ➡️  `{PURPLEBOT_VERSION}` \n"
             f"⚙️ **Telethon**      ➡️  `{version.__version__}` \n"
-            f"🐍 **Python**        ➡️  `{python_version()}` \n"
+            f"🐍 **Python**         ➡️  `{python_version()}` \n"
             f"👤 **Usuário**       ➡️   `{DEFAULTUSER}` "
             "\n\n__Userbot iniciado__ ☑️"
         )
