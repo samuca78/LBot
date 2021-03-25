@@ -197,7 +197,7 @@ async def type_afk_is_not_true(notafk):
 CMD_HELP.update(
     {
         "afk": ">`.afk [Motivo Opcional]`"
-        "\nUso: Define você como afk.\nResponde automaticamente quem te menciona ou envia mensagens privadas "
+        "\n**Uso:** Define você como afk.\nResponde automaticamente quem te menciona ou envia mensagens privadas "
         "dizendo a eles que você está AFK(motivo)."
         "\n\nDesliga o AFK quando você digita qualquer coisa, em qualquer lugar."
     }

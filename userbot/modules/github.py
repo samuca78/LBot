@@ -57,4 +57,4 @@ async def github(event):
                 await event.edit(REPLY)
 
 
-CMD_HELP.update({"github": "`.git`" "\nUso: Como .whois, mas para nomes de usuário do GitHub."})
+CMD_HELP.update({"github": "`.git`" "\n**Uso:** Como .whois, mas para nomes de usuário do GitHub."})

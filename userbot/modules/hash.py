@@ -76,8 +76,8 @@ async def endecrypt(query):
 CMD_HELP.update(
     {
         "hash": ">`.hash`"
-        "\nUso: Encontra o md5, sha1, sha256, sha512 da string quando escrita em um arquivo txt.",
+        "\n**Uso:** Encontra o md5, sha1, sha256, sha512 da string quando escrita em um arquivo txt.",
         "base64": ">`.base64 [en ou de]`"
-        "\nUso: Encontra a codificação base64 da string dada ou a decodifica.",
+        "\n**Uso:** Encontra a codificação base64 da string dada ou a decodifica.",
     }
 )

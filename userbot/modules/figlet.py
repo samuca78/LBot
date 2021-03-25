@@ -51,7 +51,7 @@ def deEmojify(inputString):
 CMD_HELP.update(
     {
         "figlet": ">`.figlet`"
-        "\nUso: Estiliza seu texto."
+        "\n**Uso:** Estiliza seu texto."
         "\n\nExemplo: `.figlet <estilo> <seu texto vai aqui>`"
         "\nEstilos Disponíveis: `slant`, `3d`, `5line`, `alpha`, `banner`, `doh`, `iso`, `letter`, `allig`, `dotm`, `bubble`, `bulb`, `digi`"
     }

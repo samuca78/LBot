@@ -150,12 +150,12 @@ def zipdir(path, ziph):
 CMD_HELP.update(
     {
         "zipfile": "`.compress` [opcional: <responder ao arquivo >]"
-        "\nUso: compactar arquivos."
+        "\n**Uso:** compactar arquivos."
         "\n\n`.addzip` <responder ao arquivo>"
-        "\nUso: adicionar arquivos à lista zip."
+        "\n**Uso:** adicionar arquivos à lista zip."
         "\n\n`.upzip` [opcional: <título zip>]"
-        "\nUso: fazer upload da lista zip."
+        "\n**Uso:** fazer upload da lista zip."
         "\n\n`.rmzip` [opcional: <título zip>]"
-        "\nUso: limpar a lista zip."
+        "\n**Uso:** limpar a lista zip."
     }
 )

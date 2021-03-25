@@ -185,7 +185,7 @@ async def rem_locks(event):
 CMD_HELP.update(
     {
         "locks": ">`.lock <all (ou) categoria(s)>` ou >`.unlock <all (ou) categoria(s)>`"
-        "\nUso: Permite que você bloqueie/desbloqueie alguns tipos de mensagens comuns no chat."
+        "\n**Uso:** Permite que você bloqueie/desbloqueie alguns tipos de mensagens comuns no chat."
         "\n[NOTA: Requer direitos de administrador no chat !!]"
         "\n\nOs tipos de mensagens disponíveis para bloquear/desbloquear são: "
         "\n`all, msg, media, sticker, gif, game, inline, poll, invite, pin, info`"

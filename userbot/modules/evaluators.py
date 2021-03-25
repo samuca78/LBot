@@ -176,9 +176,9 @@ CMD_HELP.update(
         "`.eval return 2 + 3`\n"
         "`.eval print(event)`\n"
         "`.eval await event.reply('Ender')`\n"
-        "\nUso: Avalie as expressões Python nos args do script em execução.",
+        "\n**Uso:** Avalie as expressões Python nos args do script em execução.",
         "exec": "`.exec print('hello')`"
-        "\nUso: Execute pequenos scripts python em subprocessoss.",
+        "\n**Uso:** Execute pequenos scripts python em subprocessoss.",
         "term": "`.term <cmd>`\n"
         "Uso: Execute comandos e scripts bash em seu servidor.",
     }

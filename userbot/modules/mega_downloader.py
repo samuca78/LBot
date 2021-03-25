@@ -187,7 +187,7 @@ async def decrypt_file(megadl, file_path, temp_file_path, hex_key, hex_raw_key):
 CMD_HELP.update(
     {
         "mega": ">`.mega <MEGA.nz link>`"
-        "\nUso: Responda a um link MEGA.nz ou cole seu link MEGA.nz para "
+        "\n**Uso:** Responda a um link MEGA.nz ou cole seu link MEGA.nz para "
         "baixar o arquivo em seu servidor userbot."
     }
 )

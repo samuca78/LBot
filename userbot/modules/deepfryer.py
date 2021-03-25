@@ -74,7 +74,7 @@ async def _(fry):
 CMD_HELP.update(
     {
         "deepfry": ">`.df` ou >`.df [level(1-8)]`"
-        "\nUso: Frite a imagem/sticker da resposta."
+        "\n**Uso:** Frite a imagem/sticker da resposta."
         "\n@image_deepfrybot"
     }
 )

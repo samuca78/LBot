@@ -192,17 +192,17 @@ async def _(dyno):
 CMD_HELP.update(
     {
         "heroku": ">.`usage`"
-        "\nUso: Mostra estatísticas de hora do dinamômetro do Heroku."
+        "\n**Uso:** Mostra estatísticas de hora do dinamômetro do Heroku."
         "\n\n>`.set var <configvar> <value>`"
-        "\nUso: Adiciona um novo ConfigVar ou atualiza o ConfigVar existente."
+        "\n**Uso:** Adiciona um novo ConfigVar ou atualiza o ConfigVar existente."
         "\nO bot irá reiniciar após usar este comando."
         "\n\n>`.get var <configvar>[opcional]`"
-        "\nUso: Mostra os valores atuais para o especificado ou todos os ConfigVars."
+        "\n**Uso:** Mostra os valores atuais para o especificado ou todos os ConfigVars."
         "\nCertifique-se de executar o comando em um grupo privado se você não tiver o Botlog configurado."
         "\n\n>`.del var <configvar>`"
-        "\nUso: Remove o ConfigVar especificado."
+        "\n**Uso:** Remove o ConfigVar especificado."
         "\nO bot irá reiniciar após usar este comando."
         "\n\n>`.logs`"
-        "\nUso: Recupera registros do dinamômetro do Heroku."
+        "\n**Uso:** Recupera registros do dinamômetro do Heroku."
     }
 )

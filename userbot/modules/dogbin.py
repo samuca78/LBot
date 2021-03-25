@@ -190,10 +190,10 @@ async def get_dogbin_content(dog_url):
 CMD_HELP.update(
     {
         "dogbin": ">`.paste <texto/resposta>`"
-        "\nUso: Cria uma colagem ou um url encurtado usando dogbin (https://del.dog/)"
+        "\n**Uso:** Cria uma colagem ou um url encurtado usando dogbin (https://del.dog/)"
         "\n\n>`.getpaste`"
-        "\nUso: Obtém o conteúdo de uma colagem ou url encurtada do dogbin (https://del.dog/)"
+        "\n**Uso:** Obtém o conteúdo de uma colagem ou url encurtada do dogbin (https://del.dog/)"
         "\n\n>`.neko <texto/resposta>`"
-        "\nUso: Crie uma colagem ou um url encurtado usando nekobin (https://nekobin.com/)"
+        "\n**Uso:** Crie uma colagem ou um url encurtado usando nekobin (https://nekobin.com/)"
     }
 )

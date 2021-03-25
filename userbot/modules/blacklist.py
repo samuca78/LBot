@@ -94,12 +94,12 @@ CMD_HELP.update(
     {
         "blacklist": "**Desativa todas as funções do userbot em grupos da lista negra.**"
         "\n\n`>.blacklist <chat id>`"
-        "\nUso: Bota o chat na lista negra."
+        "\n**Uso:** Bota o chat na lista negra."
         "\n\n>`.unblacklist <chat id>`"
-        "\nUso: Remove o bate-papo da lista negra."
+        "\n**Uso:** Remove o bate-papo da lista negra."
         "\n\n>`.unblacklist all`"
-        "\nUso: Remove todos os chats da lista negra."
+        "\n**Uso:** Remove todos os chats da lista negra."
         "\n\n>`.blacklists`"
-        "\nUso: Lista todos os bate-papos na lista negra."
+        "\n**Uso:** Lista todos os bate-papos na lista negra."
     }
 )

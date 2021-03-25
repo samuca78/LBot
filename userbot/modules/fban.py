@@ -213,18 +213,18 @@ async def clearf(event):
 CMD_HELP.update(
     {
         "fban": ">`.fban <id/nome de usuário> <motivo>`"
-        "\nUso: Bane o usuário de federações conectadas."
+        "\n**Uso:** Bane o usuário de federações conectadas."
         "\nVocê pode responder ao usuário que deseja fbanir ou passar manualmente o nome de usuário/id."
         "\n\n`>.unfban <id/nome de usuário> <motivo>`"
-        "\nUso: O mesmo que fban, mas desbane o usuário"
+        "\n**Uso:** O mesmo que fban, mas desbane o usuário"
         "\n\n>`.addf <name>`"
-        "\nUso: Adiciona o grupo atual e o armazena como <nome> nas federações conectadas."
+        "\n**Uso:** Adiciona o grupo atual e o armazena como <nome> nas federações conectadas."
         "\nAdicionar um grupo é suficiente para uma federação."
         "\n\n>`.delf`"
-        "\nUso: Remove o grupo atual das federações conectadas."
+        "\n**Uso:** Remove o grupo atual das federações conectadas."
         "\n\n>`.listf`"
-        "\nUso: Lista todas as federações conectadas por nome especificado. "
+        "\n**Uso:** Lista todas as federações conectadas por nome especificado. "
         "\n\n>`.clearf`"
-        "\nUso: Desconecta de todas as federações conectadas. Use-o com cuidado."
+        "\n**Uso:** Desconecta de todas as federações conectadas. Use-o com cuidado."
     }
 )

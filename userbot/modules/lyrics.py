@@ -61,8 +61,8 @@ async def lyrics(lyric):
 CMD_HELP.update(
     {
         "lyrics": ">`.lyrics` **<nome do artista> - <nome da música>**"
-        "\nUso: Obtém a letra de determinada música."
+        "\n**Uso:** Obtém a letra de determinada música."
         "\n\n>`.lyrics now`"
-        "\nUso: Obtém a letra do scrobble LastFM atual."
+        "\n**Uso:** Obtém a letra do scrobble LastFM atual."
     }
 )

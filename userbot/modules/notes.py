@@ -139,16 +139,16 @@ async def kick_marie_notes(kick):
 CMD_HELP.update(
     {
         "notes": "`#<notename>`"
-        "\nUso: Obtém a nota especificada."
+        "\n**Uso:** Obtém a nota especificada."
         "\n\n>`.save <notename> <notedata>` ou responda a uma mensagem com >`.save <notename>`"
-        "\nUso: Salva a mensagem respondida como uma nota com o notename. "
+        "\n**Uso:** Salva a mensagem respondida como uma nota com o notename. "
         "(Funciona com fotos, documentos e adesivos também!)"
         "\n\n>`.notes`"
-        "\nUso: Obtém todas as notas salvas em um bate-papo."
+        "\n**Uso:** Obtém todas as notas salvas em um bate-papo."
         "\n\n>`.clear <notename>`"
-        "\nUso: Exclui a nota especificada."
+        "\n**Uso:** Exclui a nota especificada."
         "\n\n>`.rmbotnotes <marie/rose>`"
-        "\nUso: Remove todas as notas de bots de administração"
+        "\n**Uso:** Remove todas as notas de bots de administração"
         " (Suportado atualmente: Marie, Rose e seus clones.) no bate papo."
     }
 )

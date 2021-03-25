@@ -392,7 +392,7 @@ async def useragent():
 CMD_HELP.update(
     {
         "direct": ">`.direct <url>`"
-        "\nUso: Responda a um link ou cole um URL para\n"
+        "\n**Uso:** Responda a um link ou cole um URL para\n"
         "gerar um link de download direto\n\n"
         "Lista de URLs suportados:\n"
         "`Google Drive - Cloud Mail - Yandex.Disk - AFH - "

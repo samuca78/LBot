@@ -133,17 +133,17 @@ async def raw(event):
 CMD_HELP.update(
     {
         "random": ">`.random <item1> <item2> ... <itemN>`"
-        "\nUso: Pegue um item aleatório da lista de itens.",
+        "\n**Uso:** Pegue um item aleatório da lista de itens.",
         "sleep": ">`.sleep <segundos>`"
-        "\nUso: Deixa seu bot adormecer por alguns segundos.",
-        "shutdown": ">`.shutdown`" "\nUso: Encerra o bot.",
-        "repo": ">`.repo`" "\nUso: Repositório GitHub deste bot",
+        "\n**Uso:** Deixa seu bot adormecer por alguns segundos.",
+        "shutdown": ">`.shutdown`" "\n**Uso:** Encerra o bot.",
+        "repo": ">`.repo`" "\n**Uso:** Repositório GitHub deste bot",
         "readme": ">`.readme`"
-        "\nUso: Fornece links para configurar o userbot e seus módulos.",
+        "\n**Uso:** Fornece links para configurar o userbot e seus módulos.",
         "repeat": ">`.repeat <no> <text>`"
-        "\nUso: Repete o texto várias vezes. Não confunda isso com spam.",
-        "restart": ">`.restart`" "\nUso: Reinicia o bot.",
+        "\n**Uso:** Repete o texto várias vezes. Não confunda isso com spam.",
+        "restart": ">`.restart`" "\n**Uso:** Reinicia o bot.",
         "raw": ">`.raw`"
-        "\nUso: Obtenha dados detalhados em formato JSON sobre a mensagem respondida.",
+        "\n**Uso:** Obtenha dados detalhados em formato JSON sobre a mensagem respondida.",
     }
 )

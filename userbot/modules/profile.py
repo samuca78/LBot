@@ -178,18 +178,18 @@ async def remove_profilepic(delpfp):
 CMD_HELP.update(
     {
         "profile": ">`.username <novo_nomedeusuário>`"
-        "\nUso: Altera seu nome de usuário do Telegram."
+        "\n**Uso:** Altera seu nome de usuário do Telegram."
         "\n\n>`.name <primeiro nome>` ou >`.name <primeiro nome> <sobrenome>`"
-        "\nUso: Muda o nome do seu telegram.(O nome e o sobrenome serão divididos pelo primeiro espaço)"
+        "\n**Uso:** Muda o nome do seu telegram.(O nome e o sobrenome serão divididos pelo primeiro espaço)"
         "\n\n>`.setpfp`"
-        "\nUso: Responda com .setpfp a uma imagem para mudar a sua imagem de perfil do Telegram."
+        "\n**Uso:** Responda com .setpfp a uma imagem para mudar a sua imagem de perfil do Telegram."
         "\n\n>`.setbio <nova_bio>`"
-        "\nUso: Muda sua biografia do Telegram."
+        "\n**Uso:** Muda sua biografia do Telegram."
         "\n\n>`.delpfp` ou >`.delpfp <número>/<all>`"
-        "\nUso: Exclui sua(s) foto(s) de perfil do Telegram."
+        "\n**Uso:** Exclui sua(s) foto(s) de perfil do Telegram."
         "\n\n>`.reserved`"
-        "\nUso: Mostra nomes de usuário reservados por você."
+        "\n**Uso:** Mostra nomes de usuário reservados por você."
         "\n\n>`.count`"
-        "\nUso: Conta seus grupos, chats, bots etc...."
+        "\n**Uso:** Conta seus grupos, chats, bots etc...."
     }
 )

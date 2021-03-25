@@ -164,7 +164,7 @@ async def upload_track(track_location, message):
 CMD_HELP.update(
     {
         "deezloader": "`.deezloader` <spotify/deezer link> <qualidade>"
-        "\nUso: Baixe músicas usando o Deezloader."
+        "\n**Uso:** Baixe músicas usando o Deezloader."
         "\nQualidades disponíveis: `flac`, `320`, `256`, `128`."
     }
 )

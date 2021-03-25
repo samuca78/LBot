@@ -248,12 +248,12 @@ async def check_progress_for_dl(gid, event, previous):
 CMD_HELP.update(
     {
         "aria": ">`.aurl [URL]`\n>`.amag [Magnet Link]`\n>`.ator [caminho para o arquivo torrent]`"
-        "\nUso: Faz o download do arquivo para o armazenamento do servidor do userbot."
+        "\n**Uso:** Faz o download do arquivo para o armazenamento do servidor do userbot."
         "\n\n>`.apause (ou) .aresume`"
-        "\nUso: Pausa/retoma downloads em andamento."
+        "\n**Uso:** Pausa/retoma downloads em andamento."
         "\n\n>`.aclear`"
-        "\nUso: Limpa a fila de download, excluindo todos os downloads em andamento."
+        "\n**Uso:** Limpa a fila de download, excluindo todos os downloads em andamento."
         "\n\n>`.ashow`"
-        "\nUso: Mostra o progresso dos downloads em andamento."
+        "\n**Uso:** Mostra o progresso dos downloads em andamento."
     }
 )

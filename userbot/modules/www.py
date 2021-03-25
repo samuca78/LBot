@@ -79,8 +79,8 @@ async def pingme(event):
 
 CMD_HELP.update(
     {
-        "speed": ">`.speed`" "\nUso: Faz um teste de velocidade e mostra os resultados.",
-        "dc": ">`.dc`" "\nUso: Encontra o datacenter mais próximo de seu servidor.",
-        "ping": ">`.ping`" "\nUso: Mostra quanto tempo leva para pingar seu bot.",
+        "speed": ">`.speed`" "\n**Uso:** Faz um teste de velocidade e mostra os resultados.",
+        "dc": ">`.dc`" "\n**Uso:** Encontra o datacenter mais próximo de seu servidor.",
+        "ping": ">`.ping`" "\n**Uso:** Mostra quanto tempo leva para pingar seu bot.",
     }
 )

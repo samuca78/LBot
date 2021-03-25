@@ -221,12 +221,12 @@ CMD_HELP.update(
         "android": ">`.magisk`"
         "\nMostra os últimos lançamentos do Magisk"
         "\n\n>`.device <codinome>`"
-        "\nUso: Mostra informações sobre o codinome ou modelo do dispositivo Android."
+        "\n**Uso:** Mostra informações sobre o codinome ou modelo do dispositivo Android."
         "\n\n>`.codename <marca> <dispositivo>`"
-        "\nUso: Pesquisa o codinome do dispositivo Android."
+        "\n**Uso:** Pesquisa o codinome do dispositivo Android."
         "\n\n>`.specs <marca> <dispositivo>`"
-        "\nUso: Mostra informações de especificações do dispositivo."
+        "\n**Uso:** Mostra informações de especificações do dispositivo."
         "\n\n>`.twrp <codename>`"
-        "\nUso: Mostra o download mais recente do TWRP para o dispositivo Android."
+        "\n**Uso:** Mostra o download mais recente do TWRP para o dispositivo Android."
     }
 )

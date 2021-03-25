@@ -153,7 +153,7 @@ async def take_screen_shot(
 CMD_HELP.update(
     {
         "memify": ">`.mmf <top text>;<bottom text>`"
-        "\nUso: Responda a uma imagem/sticker/gif/vídeo para adicionar texto a ele."
+        "\n**Uso:** Responda a uma imagem/sticker/gif/vídeo para adicionar texto a ele."
         "\nSe for um vídeo, o texto será adicionado ao primeiro quadro."
     }
 )
