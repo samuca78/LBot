@@ -110,9 +110,9 @@ async def update_username(username):
         await username.edit(USERNAME_TAKEN)
 
 
-@register(outgoing=True, pattern=r"^\.count$")
+@register(outgoing=True, pattern=r"^\.stats$")
 async def count(event):
-    """ For .count command, get profile stats. """
+    """ For .stats command, get profile stats. """
     u = 0
     g = 0
     c = 0
