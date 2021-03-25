@@ -71,7 +71,7 @@ async def capture(url):
 CMD_HELP.update(
     {
         "ss": ">`.ss <url>`"
-        "\nUso: Tira uma captura de tela de um site e a envia."
+        "\n**Uso:** Tira uma captura de tela de um site e a envia."
         "\nExemplo de um URL válido : `https://www.google.com`"
     }
 )

@@ -49,6 +49,6 @@ async def _(event):
 CMD_HELP.update(
     {
         "quote": ">`.q`"
-        "\nUso: Responda a uma mensagem de texto para converter em sticker usando o bot Quotly."
+        "\n**Uso:** Responda a uma mensagem de texto para converter em sticker usando o bot Quotly."
     }
 )

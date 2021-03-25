@@ -767,30 +767,30 @@ def deEmojify(inputString):
 CMD_HELP.update(
     {
         "img": ">`.img [número] <consulta> [ou responder]`"
-        "\nUso: Faz uma pesquisa de imagens no Google."
+        "\n**Uso:** Faz uma pesquisa de imagens no Google."
         "\nPode especificar o número de resultados necessários (o padrão é 3).",
         "currency": ">`.currency <quantia> <Moeda-origem> <Moeda-alvo>`"
-        "\nUso: Converte várias moedas para você.",
+        "\n**Uso:** Converte várias moedas para você.",
         "carbon": ">`.carbon <texto> [ou resposta]`"
-        "\nUso: Embeleze seu código usando carbon.now.sh\n"
+        "\n**Uso:** Embeleze seu código usando carbon.now.sh\n"
         "Use .crblang <texto> para definir o idioma do seu código.",
         "google": ">`.google [número] <consulta> [ou resposta]`"
-        "\nUso: Faz uma pesquisa no Google."
+        "\n**Uso:** Faz uma pesquisa no Google."
         "\nPode especificar o número de resultados necessários (o padrão é 3).",
-        "wiki": ">`.wiki <consulta> [ou resposta]`" "\nUso: Faz uma pesquisa na Wikipedia.",
-        "ud": ">`.ud <consulta> [ou resposta]`" "\nUso: Faz uma pesquisa no Dicionário Urbano.",
+        "wiki": ">`.wiki <consulta> [ou resposta]`" "\n**Uso:** Faz uma pesquisa na Wikipedia.",
+        "ud": ">`.ud <consulta> [ou resposta]`" "\n**Uso:** Faz uma pesquisa no Dicionário Urbano.",
         "tts": ">`.tts <text> [ou resposta]`"
-        "\nUso: Traduz texto em fala para o idioma definido."
+        "\n**Uso:** Traduz texto em fala para o idioma definido."
         "\nUse >`.lang tts <código da linguagem>` para definir o idioma do tts. (Padrão é PT-BR.)",
         "trt": ">`.trt <texto> [ou resposta]`"
-        "\nUso: Traduz o texto para o idioma definido."
+        "\n**Uso:** Traduz o texto para o idioma definido."
         "\nUse >`.lang trt <código da linguagem>` para definir o idioma para trt. (Padrão é PT-BR)",
         "yt": ">`.yt [número] <consulta> [ou resposta]`"
-        "\nUso: Faz uma pesquisa no YouTube."
+        "\n**Uso:** Faz uma pesquisa no YouTube."
         "\nPode especificar o número de resultados necessários (o padrão é 3).",
-        "imdb": ">`.imdb <nome-do-filme>`" "\nUso: Mostra informações do filme e outras coisas.",
+        "imdb": ">`.imdb <nome-do-filme>`" "\n**Uso:** Mostra informações do filme e outras coisas.",
         "rip": ">`.ra <url> [ou resposta] ou .rv <url> [ou resposta]`"
-        "\nUso: Baixe vídeos e músicas do YouTube "
+        "\n**Uso:** Baixe vídeos e músicas do YouTube "
         "(e [muitos outros sites](https://ytdl-org.github.io/youtube-dl/supportedsites.html)).",
     }
 )

@@ -106,7 +106,7 @@ async def sed(command):
 CMD_HELP.update(
     {
         "sed": ">`.s<delimitador><palavra-original><delimitador><nova palavra>`"
-        "\nUso: Substitui uma palavra ou palavras usando sed."
+        "\n**Uso:** Substitui uma palavra ou palavras usando sed."
         "\nDelimitadores: `/, :, |, _`"
     }
 )

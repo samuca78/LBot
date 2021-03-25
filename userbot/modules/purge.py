@@ -104,14 +104,14 @@ async def selfdestruct(destroy):
 
 CMD_HELP.update(
     {
-        "purge": ">`.purge`" "\nUso: Limpa todas as mensagens a partir da resposta.",
+        "purge": ">`.purge`" "\n**Uso:** Limpa todas as mensagens a partir da resposta.",
         "purgeme": ">`.purgeme <x>`"
-        "\nUso: Exclui x quantidade de suas mensagens mais recentes.",
-        "del": ">`.del`" "\nUso: Exclui a mensagem que você respondeu.",
+        "\n**Uso:** Exclui x quantidade de suas mensagens mais recentes.",
+        "del": ">`.del`" "\n**Uso:** Exclui a mensagem que você respondeu.",
         "edit": ">`.edit <newmessage>`"
-        "\nUso: Substitua sua última mensagem por <nova mensagem>.",
+        "\n**Uso:** Substitua sua última mensagem por <nova mensagem>.",
         "sd": ">`.sd <x> <mensagem>`"
-        "\nUso: Cria uma mensagem que se autodestrói em x segundos."
+        "\n**Uso:** Cria uma mensagem que se autodestrói em x segundos."
         "\n<x> deve ser um valor de dois dígitos, o terceiro dígito e outros dígitos serão considerados como <mensagem>.",
     }
 )

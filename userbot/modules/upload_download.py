@@ -320,10 +320,10 @@ async def upload(event):
 CMD_HELP.update(
     {
         "download": ">`.download` <link> | <nome do arquivo> (opcional)"
-        "\nUso: Baixa o arquivo do url para o servidor."
+        "\n**Uso:** Baixa o arquivo do url para o servidor."
         "\n\n>`.download` <responder ao arquivo>"
-        "\nUso: Faz o download do arquivo do arquivo/mídia respondido."
+        "\n**Uso:** Faz o download do arquivo do arquivo/mídia respondido."
         "\n\n>`.upload` <arquivo/caminho da pasta no servidor>"
-        "\nUso: Carrega um arquivo/pasta armazenado localmente para o bate-papo."
+        "\n**Uso:** Carrega um arquivo/pasta armazenado localmente para o bate-papo."
     }
 )

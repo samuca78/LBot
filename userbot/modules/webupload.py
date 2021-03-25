@@ -64,6 +64,6 @@ CMD_HELP.update(
     {
         "webupload": ">`.web` <servidor>"
         "\nLista de servidores: anonfiles|transfer|filebin|anonymousfiles|megaupload|bayfiles|lestupload|0x0"
-        "\nUso: Responda a um arquivo para enviá-lo a um dos servidores acima."
+        "\n**Uso:** Responda a um arquivo para enviá-lo a um dos servidores acima."
     }
 )

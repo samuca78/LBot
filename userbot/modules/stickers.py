@@ -376,12 +376,12 @@ async def cb_sticker(event):
 CMD_HELP.update(
     {
         "stickers": ">`.kang <emoji>[opcional] <número do pacote>[opcional]`"
-        "\nUso: Adiciona stickers ou imagem ao seu pacote de stickers."
+        "\n**Uso:** Adiciona stickers ou imagem ao seu pacote de stickers."
         "\n\n>`.stkrinfo`"
-        "\nUso: Obtém informações sobre o pacote de stickers."
+        "\n**Uso:** Obtém informações sobre o pacote de stickers."
         "\n\n>`.getsticker`"
-        "\nUso: Responda a um sticker para obter o arquivo 'PNG' do sticker."
+        "\n**Uso:** Responda a um sticker para obter o arquivo 'PNG' do sticker."
         "\n\n>`.findsticker <nome do usuário ou pacote>`"
-        "\nUso: Procura por pacotes de stickers."
+        "\n**Uso:** Procura por pacotes de stickers."
     }
 )

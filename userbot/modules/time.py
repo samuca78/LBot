@@ -162,10 +162,10 @@ async def date_func(dat):
 CMD_HELP.update(
     {
         "time": ">`.time <nome do país/código> <número do fuso horário>`"
-        "\nUso: Obtenha a hora de um país. Se um país tem "
+        "\n**Uso:** Obtenha a hora de um país. Se um país tem "
         "vários fusos horários, ele irá listar todos eles e permitir que você selecione um.",
         "date": ">`.date <nome/código do país> <número do fuso horário>`"
-        "\nUso: Obtenha a data de um país. Se um país tem "
+        "\n**Uso:** Obtenha a data de um país. Se um país tem "
         "vários fusos horários, ele irá listar todos eles e permitir que você selecione um.",
     }
 )

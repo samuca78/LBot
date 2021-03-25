@@ -50,5 +50,5 @@ async def torrent(event):
 
 
 CMD_HELP.update(
-    {"torrent": ">`.ts` <consulta>" "\nUso: Pesquisa por torrents de determinada consulta"}
+    {"torrent": ">`.ts` <consulta>" "\n**Uso:** Pesquisa por torrents de determinada consulta"}
 )

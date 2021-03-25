@@ -151,14 +151,14 @@ async def del_welcome(event):
 CMD_HELP.update(
     {
         "welcome": ">`.setwelcome <mensagem de boas-vindas> ou responda a uma mensagem com .setwelcome`"
-        "\nUso: Salva a mensagem como nota de boas-vindas no chat."
+        "\n**Uso:** Salva a mensagem como nota de boas-vindas no chat."
         "\n\nVariáveis disponíveis para formatar mensagens de boas-vindas :"
         "\n`{mention}, {title}, {count}, {first}, {last}, {fullname}, "
         "{userid}, {username}, {my_first}, {my_fullname}, {my_last}, "
         "{my_mention}, {my_username}`"
         "\n\n>`.checkwelcome`"
-        "\nUso: Verifique se você tem uma nota de boas-vindas no chat."
+        "\n**Uso:** Verifique se você tem uma nota de boas-vindas no chat."
         "\n\n>`.rmwelcome`"
-        "\nUso: Exclui a nota de boas-vindas do bate-papo atual."
+        "\n**Uso:** Exclui a nota de boas-vindas do bate-papo atual."
     }
 )

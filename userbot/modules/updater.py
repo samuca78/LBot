@@ -194,12 +194,12 @@ async def upstream(event):
 CMD_HELP.update(
     {
         "update": ">`.update`"
-        "\nUso: Verifica se o repositório principal do userbot tem alguma atualização "
+        "\n**Uso:** Verifica se o repositório principal do userbot tem alguma atualização "
         "e mostra uma lista de mudanças caso haja alterações."
         "\n\n>`.update now`"
-        "\nUso: Executa uma atualização rápida."
+        "\n**Uso:** Executa uma atualização rápida."
         "\nO Heroku redefine as atualizações realizadas usando este método após um tempo. Use `deploy` em vez disso."
         "\n\n>`.update deploy`"
-        "\nUso: Executa uma atualização completa (recomendado)."
+        "\n**Uso:** Executa uma atualização completa (recomendado)."
     }
 )

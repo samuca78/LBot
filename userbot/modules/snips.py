@@ -115,13 +115,13 @@ async def on_snip_delete(event):
 CMD_HELP.update(
     {
         "snips": ">`$<´nome_do_snip>`"
-        "\nUso: Obtém o snip especificado, em qualquer lugar."
+        "\n**Uso:** Obtém o snip especificado, em qualquer lugar."
         "\n\n>`.snip <nome> <dados> ou responda a uma mensagem com .snip <nome>`"
-        "\nUso: Salva a mensagem como um snip (nota global) com o nome."
+        "\n**Uso:** Salva a mensagem como um snip (nota global) com o nome."
         " (Funciona com fotos, documentos e stickers também!)"
         "\n\n>`.snips`"
-        "\nUso: Obtém todos os snips salvos."
+        "\n**Uso:** Obtém todos os snips salvos."
         "\n\n>`.remsnip <snip_nome>`"
-        "\nUso: Exclui o recorte especificado."
+        "\n**Uso:** Exclui o recorte especificado."
     }
 )

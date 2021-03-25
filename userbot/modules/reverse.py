@@ -158,7 +158,7 @@ async def ParseSauce(googleurl):
 CMD_HELP.update(
     {
         "reverse": ">`.reverse [número] <opcional>`"
-        "\nUso: Responda a uma foto/sticker para fazer uma busca reversa no Imagens do Google."
+        "\n**Uso:** Responda a uma foto/sticker para fazer uma busca reversa no Imagens do Google."
         "\nO número de resultados pode ser especificado, o padrão é 3."
         "\nSe o contador for 0, apenas informações e links serão fornecidos."
         "\nO bot pode falhar ao enviar imagens se um grande número de resultados for solicitado."

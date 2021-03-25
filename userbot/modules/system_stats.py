@@ -168,14 +168,14 @@ async def amireallyalivereset(ureset):
 
 CMD_HELP.update(
     {
-        "sysd": ">`.sysd`" "\nUso: Mostra informações do sistema usando neofetch.",
-        "botver": ">`.botver`" "\nUso: Mostra a versão do userbot.",
-        "pip": ">`.pip <module(s)>`" "\nUso: Faz uma pesquisa de módulos pip.",
+        "sysd": ">`.sysd`" "\n**Uso:** Mostra informações do sistema usando neofetch.",
+        "botver": ">`.botver`" "\n**Uso:** Mostra a versão do userbot.",
+        "pip": ">`.pip <module(s)>`" "\n**Uso:** Faz uma pesquisa de módulos pip.",
         "alive": ">`.alive`"
-        "\nUso: Digite .alive para ver se seu bot está funcionando ou não."
+        "\n**Uso:** Digite .alive para ver se seu bot está funcionando ou não."
         "\n\n>`.aliveu <texto>`"
-        "\nUso: Muda o 'Usuário' do alive para o texto que você deseja."
+        "\n**Uso:** Muda o 'Usuário' do alive para o texto que você deseja."
         "\n\n>`.resetalive`"
-        "\nUso: Redefine o Usuário para o padrão.",
+        "\n**Uso:** Redefine o Usuário para o padrão.",
     }
 )
