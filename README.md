@@ -1,35 +1,63 @@
-# KensurBot
+# PurpleBot userbot
 
-## Disclaimer
+![logo](https://i.ibb.co/xH67gZN/image.png)
 
 ```
-Your Telegram account may get Kensur-ed.
-I'm not responsible for any Kensur-ous use of this bot.
-This bot is intended for having fun as well as helping you
-efficiently manage groups and automate some boring stuff.
-Use this bot at your own risk, and use it sensibly.
-I will not be held accountable if ender1324 spams your PM.
+#include <std/disclaimer.h>
+/**
+    Sua conta do Telegram pode ser banida. (Não será xd)
+    Eu não sou responsável por qualquer uso indevido deste bot
+    Este bot tem o objetivo de se divertir e ser útil,
+    bem como gerenciar grupos de forma eficiente.
+    Você acabou enviando spam para grupos, sendo denunciado a torto e a direito,
+    e acabou em uma batalha com o Telegram e no final
+    A equipe do Telegram excluiu sua conta?
+    E depois disso, você apontou seu dedo para mim
+    por ter sua conta excluída?
+    Estarei gargalhando e rindo da sua cara.
+/**
 ```
 
-## What is it?
+## Gerar Sessão de String
+Maneira fácil de obter STRING_SESSION. Clique no botão e depois no botão de cor verde 'Executar' 
 
-KensurBot is a modular Telegram userbot running on Python 3 with an SQLAlchemy database.
+### Executar no repl.it
+[![Run repl.it](https://img.shields.io/badge/run-string__session.py-blue?style=flat-square&logo=repl.it)](https://repl.it/@MoveAngel/UserbotSession?lite=1&outputonly=1) - MoveAngel
 
-Based on [Paperplane](https://github.com/RaphielGang/Telegram-UserBot) and [ProjectBish](https://github.com/adekmaulana/ProjectBish) userbot.
-I made this fork to cherry-pick some modules I needed. Eventually I started messing with the code and here we are.
+[![Run repl.it](https://img.shields.io/badge/run-string__session.py-blue?style=flat-square&logo=repl.it)](https://repl.it/@kenhv/sessiongen) - KenHV
 
-## Setting up
+### ou execute em seu terminal
+```
+wget https://raw.githubusercontent.com/thewhiteharlot/PurpleBot/sql-extended/terminal_getstring.sh && bash terminal_getstring.sh
+```
 
-- [Guide to setting up](https://kenharris.xyz/userbot)
-- [Generate session string](http://sessiongen.kenhv.repl.run)
-- [Deploy on Heroku](https://heroku.com/deploy?template=https://github.com/KenHV/KensurBot/tree/master)
-- [Setup GDrive module](https://telegra.ph/How-To-Setup-Google-Drive-04-03)
-- [Setup Last.FM module](https://telegra.ph/How-to-set-up-LastFM-module-for-Paperplane-userbot-11-02)
+## Como hospedar?
 
-## Updates and support
+[𝐓𝐮𝐭𝐨𝐫𝐢𝐚𝐥 (𝐭𝐞𝐱𝐭𝐨)](https://telegra.ph/𝙎𝙤𝙪𝙡𝙫𝙚𝙨𝙨𝙚𝙡-11-10-3)
 
-Follow my [channel](https://t.me/KenVerse) for updates and join my [group](https://t.me/KensurOT) for support.
+[𝐓𝐮𝐭𝐨𝐫𝐢𝐚𝐥 (𝐯í𝐝𝐞𝐨)](https://www.youtube.com/watch?v=SBYjQ25ugZY&feature=emb_title&ab_channel=TUDOSEMCORTE) - Créditos: https://t.me/mandaloriam
 
-## Credits
+[𝐓𝐮𝐭𝐨𝐫𝐢𝐚𝐥 𝐆𝐃𝐫𝐢𝐯𝐞 (𝐯í𝐝𝐞𝐨)](https://www.youtube.com/watch?v=Z0WFtwDMnes&ab_channel=TUDOSEMCORTE) - Créditos: https://t.me/ramonazvd
 
-Huge thanks to [everyone](https://github.com/KenHV/KensurBot/graphs/contributors) who has helped make this userbot awesome!
+Certifique-se de ter uma conta do heroku e siga todos os passos necessários.
+
+<p align="left"><a href="https://heroku.com/deploy?template=https://github.com/thewhiteharlot/PurpleBot/tree/sql-extended"> <img src="https://www.herokucdn.com/deploy/button.svg" alt="Criar app no Heroku" /></a></p>
+
+
+## Créditos
+
+* [KenHV](https://github.com/KenHV) - KensurBot
+* [RaphielGang](https://github.com/RaphielGang) - Telegram-Paperplane
+* [AvinashReddy3108](https://github.com/AvinashReddy3108) - PaperplaneExtended
+* [kandnub](https://github.com/kandnub) - TG-UserBot
+* [AdekMaulana](https://github.com/adekmaulana) - ProjectBish
+* [Mr.Miss](https://github.com/keselekpermen69) - Userbutt
+* [GengKapak](https://github.com/GengKapak) - DCLXVI
+* [Mkaraniya](https://github.com/mkaraniya) & [Dev73](https://github.com/Devp73) - OpenUserBot
+* [MoveAngel](https://github.com/MoveAngel) - One4UBot
+
+e muitas outras pessoas que não são mencionadas aqui, mas podem ser encontradas em [Contributors](https://github.com/MoveAngel/One4uBot/graphs/contributors).
+
+## Licença
+
+Este userbot é licenciado em [Raphielscape Public License](https://github.com/thewhiteharlot/PurpleBot/blob/sql-extended/LICENSE) - Versão 1.c, Janeiro 2021
