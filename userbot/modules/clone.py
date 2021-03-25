@@ -10,7 +10,7 @@ if not hasattr(STORAGE, "userObj"):
     STORAGE.userObj = False
 
 
-@register(outgoing=True, pattern=r"^\.impostor ?(.*)")
+@register(outgoing=True, pattern=r"^\.clone ?(.*)")
 async def impostor(event):
     inputArgs = event.pattern_match.group(1)
 
@@ -18,10 +18,10 @@ async def impostor(event):
         await event.edit("**Voltando à minha verdadeira identidade...**")
         if not STORAGE.userObj:
             return await event.edit(
-                "**Você precisa personificar um perfil antes de reverter!**"
+                "**Você precisa clonar um perfil antes de reverter!**"
             )
         await updateProfile(STORAGE.userObj, restore=True)
-        return await event.edit("**É bom estar de volta!**")
+        return await event.edit("**Revertido com sucesso!**")
     if inputArgs:
         try:
             user = await event.client.get_entity(inputArgs)
@@ -35,7 +35,7 @@ async def impostor(event):
         userObj = await event.client(GetFullUserRequest(replyMessage.sender_id))
     else:
         return await event.edit(
-            "**Consulte** `.help impersonate` **para aprender como usá-lo.**"
+            "**Consulte** `.help clone` **para aprender como usá-lo.**"
         )
 
     if not STORAGE.userObj:
@@ -45,7 +45,7 @@ async def impostor(event):
 
     await event.edit("**Roubando a identidade dessa pessoa aleatória...**")
     await updateProfile(userObj)
-    await event.edit("**Eu sou você e você sou eu.**")
+    await event.edit("**Eu sou você e você sou eu, nós somos um.**")
 
 
 async def updateProfile(userObj, restore=False):
@@ -85,11 +85,11 @@ async def updateProfile(userObj, restore=False):
 
 CMD_HELP.update(
     {
-        "impostor": ">`.impostor` (como uma resposta a uma mensagem de um usuário)\
+        "clone": ">`.clone` (como uma resposta a uma mensagem de um usuário)\
     \nUso: Rouba a identidade do usuário.\
-    \n\n>`.impostor <nome de usuário/ID>`\
+    \n\n>`.clone <nome de usuário/ID>`\
     \nUso: Rouba a identidade do nome de usuário/ID fornecido.\
-    \n\n>`.impostor restore`\
+    \n\n>`.clone restore`\
     \nUso: Reverta para sua verdadeira identidade.\
     \n\n**Sempre restaure antes de executá-lo novamente.**\
 "
