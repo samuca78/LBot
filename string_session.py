@@ -23,9 +23,9 @@ with TelegramClient(StringSession(), API_KEY, API_HASH) as client:
     session_string = client.session.save()
     saved_messages_template = """Suporte: @Kircheiss
 
-<code>STRING_SESSION</code>: <code>{}</code>
+STRING_SESSION: <code>{}</code>
 
-⚠️ <i>Do NOT send this to anyone else!</i>""".format(
+⚠️ <i>NÃO envie isso para mais ninguém!</i>""".format(
         session_string
     )
     client.send_message("me", saved_messages_template, parse_mode="html")
