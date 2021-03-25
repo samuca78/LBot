@@ -106,7 +106,7 @@ async def fetch_info(replied_user, event):
         )
     )
     replied_user_profile_photos_count = (
-        "A pessoa precisa de ajuda com o upload da foto do perfil."
+        "A pessoa precisa de ajuda para fazer upload de fotos do perfil."
     )
     try:
         replied_user_profile_photos_count = replied_user_profile_photos.count
