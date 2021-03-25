@@ -128,10 +128,10 @@ async def amireallyalive(alive):
     output = (
         "`Tudo funcionando como deveria...`\n"
         "`➖➖➖➖➖➖➖➖➖➖➖➖`\n"
-        f"•  👾 `PurpleBot  :`  v{PURPLEBOT_VERSION} \n"
-        f"•  ⚙️ `Telethon   :`  v{version.__version__} \n"
-        f"•  🐍 `Python     :`  v{python_version()} \n"
-        f"•  👤 `Usuário    :`  {DEFAULTUSER} "
+        f"•  👾 `PurpleBot :`   v{PURPLEBOT_VERSION} \n"
+        f"•  ⚙️ `Telethon  :`   v{version.__version__} \n"
+        f"•  🐍 `Python    :`   v{python_version()} \n"
+        f"•  👤 `Usuário   :`   {DEFAULTUSER} "
     )
     if ALIVE_LOGO:
         try:
