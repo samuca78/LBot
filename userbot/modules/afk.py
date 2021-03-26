@@ -157,37 +157,15 @@ async def type_afk_is_not_true(notafk):
         if BOTLOG:
             await notafk.client.send_message(
                 BOTLOG_CHATID,
-                "Você recebeu "
-                + str(COUNT_MSG)
-                + " mensagens de "
-                + str(len(USERS))
-                + " bate-papos enquanto você estava fora",
+                f"You've recieved {str(COUNT_MSG)} messages from {str(len(USERS))} chats while you were away",
             )
             for i in USERS:
-                if str(i).isnumeric():
+                if i is not None:
                     name = await notafk.client.get_entity(i)
                     name0 = str(name.first_name)
                     await notafk.client.send_message(
                         BOTLOG_CHATID,
-                        "["
-                        + name0
-                        + "](tg://user?id="
-                        + str(i)
-                        + ")"
-                        + " enviou a você "
-                        + "`"
-                        + str(USERS[i])
-                        + " mensagens`",
-                    )
-                else:  # anon admin
-                    await notafk.client.send_message(
-                        BOTLOG_CHATID,
-                        "Administrador anônimo em `"
-                        + i
-                        + "` enviou a você "
-                        + "`"
-                        + str(USERS[i])
-                        + " mensagens`",
+                        f"[{name0}](tg://user?id={str(i)}) sent you `{str(USERS[i])} message(s)`",
                     )
         COUNT_MSG = 0
         USERS = {}
