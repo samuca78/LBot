@@ -130,6 +130,25 @@ async def raw(event):
             await event.edit("**Este recurso precisa do BOTLOG_CHATID definido.**")
 
 
+@register(outgoing=True, pattern=r"^\.send (.*)")
+async def send(event):
+    await event.edit("**Processing...**")
+
+    if not event.is_reply:
+        return await event.edit("**Reply to a message!**")
+
+    chat = event.pattern_match.group(1)
+    try:
+        chat = await event.client.get_entity(chat)
+    except (TypeError, ValueError):
+        return await event.edit("**Invalid link provided!**")
+
+    message = await event.get_reply_message()
+
+    await event.client.send_message(entity=chat, message=message)
+    await event.edit(f"**Sent this message to** `{chat.title}`**!**")
+
+
 CMD_HELP.update(
     {
         "random": ">`.random <item1> <item2> ... <itemN>`"
@@ -145,5 +164,7 @@ CMD_HELP.update(
         "restart": ">`.restart`" "\n**Uso:** Reinicia o bot.",
         "raw": ">`.raw`"
         "\n**Uso:** Obtenha dados detalhados em formato JSON sobre a mensagem respondida.",
+        "send": ">`.send <username/id>` (as a reply)"
+        '\nUsage: Forwards the replied message to given chat without the "Forwarded from" tag.',
     }
 )
