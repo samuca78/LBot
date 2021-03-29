@@ -71,7 +71,7 @@ async def killdabot(event):
 async def reedme(e):
     await e.edit(
         "Aqui estão alguns tutoriais interessantes:\n"
-        "\n[Arquivo Readme do PurpleBot](https://github.com/thewhiteharlot/PurpleBot/blob/sql-extended/README.md)"
+        "\n[Arquivo Readme do PurpleBot](https://github.com/thewhiteharlot/PurpleBot/blob/master/README.md)"
         "\n[Guia de configuração - Bot](https://www.youtube.com/watch?v=SBYjQ25ugZY&feature=emb_title&ab_channel=TUDOSEMCORTE) - Créditos: @mandaloriam"
         "\n[Guia de configuração - Google Drive](https://www.youtube.com/watch?v=Z0WFtwDMnes&ab_channel=TUDOSEMCORTE) - Créditos: @ramonazvd"
         "\n[Guia de configuração - LastFM](https://telegra.ph/Tutorial-LastFM-02-04-2)"
