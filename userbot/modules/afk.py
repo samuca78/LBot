@@ -115,7 +115,7 @@ async def afk_on_pm(sender):
                 if USERS[sender.sender_id] % randint(2, 4) == 0:
                     if AFKREASON:
                         await sender.reply(
-                            f"Ainda esto ausente.\
+                            f"Ainda estou ausente.\
                         \nMotivo: **{AFKREASON}**"
                         )
                     else:
@@ -157,7 +157,7 @@ async def type_afk_is_not_true(notafk):
         if BOTLOG:
             await notafk.client.send_message(
                 BOTLOG_CHATID,
-                f"You've recieved {str(COUNT_MSG)} messages from {str(len(USERS))} chats while you were away",
+                f"Você recebeu {str(COUNT_MSG)} mensagens de {str(len(USERS))} bate-papos enquanto você estava fora",
             )
             for i in USERS:
                 if i is not None:
@@ -165,7 +165,7 @@ async def type_afk_is_not_true(notafk):
                     name0 = str(name.first_name)
                     await notafk.client.send_message(
                         BOTLOG_CHATID,
-                        f"[{name0}](tg://user?id={str(i)}) sent you `{str(USERS[i])} message(s)`",
+                        f"[{name0}](tg://user?id={str(i)}) enviou a você `{str(USERS[i])} mensagens`",
                     )
         COUNT_MSG = 0
         USERS = {}

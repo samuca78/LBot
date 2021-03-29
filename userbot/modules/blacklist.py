@@ -22,7 +22,7 @@ async def blacklist(event):
     try:
         chat_id = await event.client.get_peer_id(chat_id)
     except Exception:
-        return await event.edit("**Error: Invalid username/ID provided.**")
+        return await event.edit("**Erro: nome de usuário/ID inválido fornecido.**")
 
     try:
         add_blacklist(str(chat_id))
@@ -61,7 +61,7 @@ async def unblacklist(event):
             id_exists = True
 
     if not id_exists:
-        return await event.edit("**This chat isn't blacklisted.**")
+        return await event.edit("**Este bate-papo não está na lista negra.**")
 
     del_blacklist(chat_id)
     await event.edit("**Bate-papo removido da lista negra!**")
