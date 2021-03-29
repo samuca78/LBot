@@ -14,17 +14,18 @@ async def blacklist(event):
     except IntegrityError:
         return await event.edit("**Executando em modo não SQL!**")
 
-    group_id = event.pattern_match.group(1)
-    if not group_id:
-        return await event.edit("**Forneça um ID de bate-papo para a lista negra!**")
+    try:
+        chat_id = int(event.pattern_match.group(1))
+    except ValueError:
+        chat_id = event.pattern_match.group(1)
 
     try:
-        await event.client.get_entity(int(group_id))
-    except (TypeError, ValueError):
-        return await event.edit("**Erro: ID inválido fornecido.**")
+        chat_id = await event.client.get_peer_id(chat_id)
+    except Exception:
+        return await event.edit("**Error: Invalid username/ID provided.**")
 
     try:
-        add_blacklist(group_id)
+        add_blacklist(str(chat_id))
     except IntegrityError:
         return await event.edit("**O bate-papo já está na lista negra.**")
 
@@ -42,11 +43,13 @@ async def unblacklist(event):
     except IntegrityError:
         return await event.edit("**Executando em modo não SQL!**")
 
-    group_id = event.pattern_match.group(1)
-    if not group_id:
-        return await event.edit("**Forneça um ID de bate-papo para remover da lista negra!**")
+    chat_id = event.pattern_match.group(1)
+    try:
+        chat_id = str(await event.client.get_peer_id(chat_id))
+    except Exception:
+        pass  # this way, deleted chats can be unblacklisted
 
-    if group_id == "all":
+    if chat_id == "all":
         from userbot.modules.sql_helper.blacklist_sql import del_blacklist_all
 
         del_blacklist_all()
@@ -54,13 +57,13 @@ async def unblacklist(event):
 
     id_exists = False
     for i in get_blacklist():
-        if group_id == i.chat_id:
+        if chat_id == i.chat_id:
             id_exists = True
 
     if not id_exists:
-        return await event.edit("**Nada para fazer.**")
+        return await event.edit("**This chat isn't blacklisted.**")
 
-    del_blacklist(group_id)
+    del_blacklist(chat_id)
     await event.edit("**Bate-papo removido da lista negra!**")
 
 
@@ -93,9 +96,9 @@ async def list_blacklist(event):
 CMD_HELP.update(
     {
         "blacklist": "**Desativa todas as funções do userbot em grupos da lista negra.**"
-        "\n\n`>.blacklist <chat id>`"
+        "\n\n`>.blacklist <username/id>`"
         "\n**Uso:** Bota o chat na lista negra."
-        "\n\n>`.unblacklist <chat id>`"
+        "\n\n>`.unblacklist <username/id>`"
         "\n**Uso:** Remove o bate-papo da lista negra."
         "\n\n>`.unblacklist all`"
         "\n**Uso:** Remove todos os chats da lista negra."

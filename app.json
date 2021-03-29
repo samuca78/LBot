@@ -39,16 +39,6 @@
       "value": "1",
       "required": false
     },
-    "CHROME_DRIVER": {
-      "description": "Localização do ChromeDriver para módulos baseados em selenium.",
-      "value": "/usr/bin/chromedriver",
-      "required": false
-    },
-    "GOOGLE_CHROME_BIN": {
-      "description": "Google Chrome (ou) localização binária do Chromium para módulos baseados em selenium.",
-      "value": "/usr/bin/chromium-browser",
-      "required": false
-    },
     "OPEN_WEATHER_MAP_APPID": {
       "description": "Obtenha seu próprio APPID (API key) de https://api.openweathermap.org/data/2.5/weather",
       "required": false
