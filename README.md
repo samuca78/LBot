@@ -28,7 +28,7 @@ Maneira fácil de obter STRING_SESSION. Clique no botão e depois no botão de c
 
 ### ou execute em seu terminal
 ```
-wget https://raw.githubusercontent.com/thewhiteharlot/PurpleBot/sql-extended/terminal_getstring.sh && bash terminal_getstring.sh
+wget https://raw.githubusercontent.com/thewhiteharlot/PurpleBot/master/terminal_getstring.sh && bash terminal_getstring.sh
 ```
 
 ## Como hospedar?
@@ -41,7 +41,7 @@ wget https://raw.githubusercontent.com/thewhiteharlot/PurpleBot/sql-extended/ter
 
 Certifique-se de ter uma conta do heroku e siga todos os passos necessários.
 
-<p align="left"><a href="https://heroku.com/deploy?template=https://github.com/thewhiteharlot/PurpleBot/tree/sql-extended"> <img src="https://www.herokucdn.com/deploy/button.svg" alt="Criar app no Heroku" /></a></p>
+<p align="left"><a href="https://heroku.com/deploy?template=https://github.com/thewhiteharlot/PurpleBot/tree/master"> <img src="https://www.herokucdn.com/deploy/button.svg" alt="Criar app no Heroku" /></a></p>
 
 
 ## Créditos
@@ -60,4 +60,4 @@ e muitas outras pessoas que não são mencionadas aqui, mas podem ser encontrada
 
 ## Licença
 
-Este userbot é licenciado em [Raphielscape Public License](https://github.com/thewhiteharlot/PurpleBot/blob/sql-extended/LICENSE) - Versão 1.c, Janeiro 2021
+Este userbot é licenciado em [Raphielscape Public License](https://github.com/thewhiteharlot/PurpleBot/blob/master/LICENSE) - Versão 1.c, Janeiro 2021
