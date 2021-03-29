@@ -342,7 +342,7 @@ async def text_to_speech(query):
     if gvarstatus("tts_lang") is not None:
         target_lang = str(gvarstatus("tts_lang"))
     else:
-        target_lang = "en"
+        target_lang = "pt"
 
     try:
         gTTS(message, lang=target_lang)
@@ -486,7 +486,7 @@ async def translateme(trans):
     if gvarstatus("trt_lang") is not None:
         target_lang = str(gvarstatus("trt_lang"))
     else:
-        target_lang = "en"
+        target_lang = "pt"
 
     try:
         reply_text = translator.translate(deEmojify(message), lang_tgt=target_lang)
