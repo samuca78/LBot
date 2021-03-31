@@ -129,8 +129,8 @@ async def amireallyalive(alive):
         "`➖➖➖➖➖➖➖➖➖➖➖`\n"
         f"•  👾 PurpleBot   :   v{PURPLEBOT_VERSION} \n"
         f"•  ⚙️ Telethon     :   v{version.__version__} \n"
-        f"•  🐍 Python        :   v{python_version()} \n"
-        f"•  👤 Usuário       :   {DEFAULTUSER} \n"
+        f"•  🐍 Python         :   v{python_version()} \n"
+        f"•  👤 Usuário        :   {DEFAULTUSER} \n"
         "`➖➖➖➖➖➖➖➖➖➖➖`"
     )
     if ALIVE_LOGO:
