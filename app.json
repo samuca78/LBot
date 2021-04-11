@@ -4,7 +4,7 @@
   "logo": "https://telegra.ph/file/0e927c66b95ea3092d5ca.jpg",
   "keywords": ["telegram", "userbot", "plugin", "modular", "productivity"],
   "repository": "https://github.com/samuca78/LzinhoBot",
-  "website": "https://github.com/samuca78",
+  "website": "https://github.com/samuca78/LzinhoBot",
   "success_url": "https://t.me/LzinhoV",
   "stack": "container",
   "env": {
