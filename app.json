@@ -1,11 +1,11 @@
 {
-  "name": "PurpleBot",
-  "description": "[PurpleBot] Um userbot modular do Telegram em execução no Python 3.8 com um banco de dados sqlalchemy.",
-  "logo": "https://i.ibb.co/fN3nTx0/image.png",
+  "name": "LzinhoBot",
+  "description": "[LzinhoBot] Um userbot modular do Telegram em execução no Python 3.8 com um banco de dados sqlalchemy.",
+  "logo": "https://t.me/c/1378370752/2395",
   "keywords": ["telegram", "userbot", "plugin", "modular", "productivity"],
-  "repository": "https://github.com/thewhiteharlot/PurpleBotKEN",
-  "website": "https://github.com/thewhiteharlot/PurpleBotKEN",
-  "success_url": "https://t.me/Kircheiss",
+  "repository": "https://github.com/samuca78/USERGE-X",
+  "website": "https://github.com/samuca78",
+  "success_url": "https://t.me/LzinhoV",
   "stack": "container",
   "env": {
     "ALIVE_NAME": {
@@ -29,15 +29,7 @@
     },
     "HEROKU_APP_NAME": {
       "description": "Adicione o nome do aplicativo Heroku aqui. Isso ajuda com as atualizações do userbot."
-    },
-    "COUNTRY": {
-      "description": "Defina seu país para ser usado nos comandos .time e .date.",
-      "required": false
-    },
-    "TZ_NUMBER": {
-      "description": "Altere este valor caso seu país tenha vários fusos horários.",
-      "value": "1",
-      "required": false
+
     },
     "OPEN_WEATHER_MAP_APPID": {
       "description": "Obtenha seu próprio APPID (API key) de https://api.openweathermap.org/data/2.5/weather",
