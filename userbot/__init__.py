@@ -117,7 +117,10 @@ ANTI_SPAMBOT_SHOUT = sb(os.environ.get("ANTI_SPAMBOT_SHOUT") or "False")
 # Default .alive name
 ALIVE_NAME = os.environ.get("ALIVE_NAME") or None
 
-# Time
+# Time & Date - Country and Time Zone
+COUNTRY = str(os.environ.get("COUNTRY") or "")
+
+TZ_NUMBER = int(os.environ.get("TZ_NUMBER") or 1)
 
 
 
