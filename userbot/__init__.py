@@ -169,7 +169,7 @@ GENIUS = os.environ.get("GENIUS_ACCESS_TOKEN") or None
 USR_TOKEN = os.environ.get("USR_TOKEN_UPTOBOX") or None
 
 # LzinhoBot version
-PURPLEBOT_VERSION = "5.0.1"
+LZINHOBOT_VERSION = "5.0.1"
 
 # 'bot' variable
 if STRING_SESSION:
@@ -227,7 +227,7 @@ async def send_alive_status():
     if BOTLOG_CHATID and LOGSPAMMER:
         DEFAULTUSER = ALIVE_NAME or "Defina a ConfigVar `ALIVE_NAME`!"
         message = (
-            f"👾 **LzinhoBot**   ➡️  `{PURPLEBOT_VERSION}` \n"
+            f"👾 **LzinhoBot**   ➡️  `{LZINHOBOT_VERSION}` \n"
             f"⚙️ **Telethon**      ➡️  `{version.__version__}` \n"
             f"🐍 **Python**         ➡️  `{python_version()}` \n"
             f"👤 **Usuário**       ➡️   `{DEFAULTUSER}` "
