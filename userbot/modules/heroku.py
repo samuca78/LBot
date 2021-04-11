@@ -81,7 +81,7 @@ async def variable(var):
             return True
 
 
-@register(outgoing=True, pattern=r"^\.set var (\w*) ([\s\S]*)")
+@register(outgoing=True, pattern=r"^\.setvar (\w*) ([\s\S]*)")
 async def set_var(var):
     if app is None:
         return await var.edit(
@@ -193,7 +193,7 @@ CMD_HELP.update(
     {
         "heroku": ">.`usage`"
         "\n**Uso:** Mostra estatísticas de hora do dinamômetro do Heroku."
-        "\n\n>`.set var <configvar> <value>`"
+        "\n\n>`.setvar <configvar> <value>`"
         "\n**Uso:** Adiciona um novo ConfigVar ou atualiza o ConfigVar existente."
         "\nO bot irá reiniciar após usar este comando."
         "\n\n>`.get var <configvar>[opcional]`"
