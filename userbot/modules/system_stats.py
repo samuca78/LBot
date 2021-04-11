@@ -133,7 +133,7 @@ async def amireallyalive(alive):
         f"** v{version.__version__} \n**"
         f"•` 🐍 Python: \n`"
         f"** v{python_version()} \n**"
-         f"⚡ <a href={https://t.me/FourPlayGrupo}><b>FOUR_PLAY</b></a> \n"
+         f"⚡ <a href={'https://t.me/FourPlayGrupo'}><b>FOUR_PLAY</b></a> \n"
 
     )
     if ALIVE_LOGO:
