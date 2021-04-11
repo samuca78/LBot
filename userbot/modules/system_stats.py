@@ -132,7 +132,7 @@ async def amireallyalive(alive):
         f"•` ⚙️ Telethon: \n`"
         f"** v{version.__version__} \n**"
         f"•` 🐍 Python: \n`"
-        f"** v{python_version()} \n**
+        f"** v{python_version()} \n**"
         
     )
     if ALIVE_LOGO:
