@@ -126,10 +126,6 @@ async def pipcheck(pip):
 async def amireallyalive(alive):
     """ For .alive command, check if the bot is running.  """
     output = (
-    else:
-        reply_markup = none
-        file_id = _USER_CACHED_MEDIA
-        caption *= (
         "**Bot funcionando normalmente** \n"
         f"•` 🤖 LzinhoBot: \n`"
         f"** v{PURPLEBOT_VERSION} \n**"
