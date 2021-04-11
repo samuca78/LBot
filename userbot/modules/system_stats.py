@@ -126,7 +126,6 @@ async def pipcheck(pip):
 async def amireallyalive(alive):
     """ For .alive command, check if the bot is running.  """
     output = (
-       file_id = _USER_CACHED_MEDIA
     else:
         reply_markup = none
         file_id = _USER_CACHED_MEDIA
