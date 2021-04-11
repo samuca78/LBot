@@ -1,6 +1,6 @@
-# PurpleBot userbot
+# LzinhoBot userbot
 
-![logo](https://i.ibb.co/xH67gZN/image.png)
+![logo](https://t.me/c/1378370752/2395)
 
 ```
 #include <std/disclaimer.h>
