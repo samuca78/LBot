@@ -130,8 +130,6 @@ async def amireallyalive(alive):
         reply_markup = none
         file_id = _USER_CACHED_MEDIA
         caption *= (
-           f"\n⚡ <a href='https://t.me/FourPlayGrupo'><b>FOUR_PLAY</b></a>"
-)
         "**Bot funcionando normalmente** \n"
         f"•` 🤖 LzinhoBot: \n`"
         f"** v{PURPLEBOT_VERSION} \n**"
