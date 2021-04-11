@@ -1,3 +1,0 @@
-# isso serve para pegar a string session no heroku \n
-
-/bin/sh python3 userbot/genStrSession.py
