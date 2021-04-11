@@ -117,9 +117,9 @@ ANTI_SPAMBOT_SHOUT = sb(os.environ.get("ANTI_SPAMBOT_SHOUT") or "False")
 # Default .alive name
 ALIVE_NAME = os.environ.get("ALIVE_NAME") or None
 
-# Time & Date - Country and Time Zone
-COUNTRY = str(os.environ.get("COUNTRY") or "")
-TZ_NUMBER = int(os.environ.get("TZ_NUMBER") or 1)
+# Time
+
+
 
 # Zipfile module
 ZIP_DOWNLOAD_DIRECTORY = os.environ.get("ZIP_DOWNLOAD_DIRECTORY") or "./zips"
@@ -168,7 +168,7 @@ GENIUS = os.environ.get("GENIUS_ACCESS_TOKEN") or None
 # Uptobox
 USR_TOKEN = os.environ.get("USR_TOKEN_UPTOBOX") or None
 
-# PurpleBot version
+# LzinhoBot version
 PURPLEBOT_VERSION = "5.0.1"
 
 # 'bot' variable
@@ -227,7 +227,7 @@ async def send_alive_status():
     if BOTLOG_CHATID and LOGSPAMMER:
         DEFAULTUSER = ALIVE_NAME or "Defina a ConfigVar `ALIVE_NAME`!"
         message = (
-            f"👾 **PurpleBot**   ➡️  `{PURPLEBOT_VERSION}` \n"
+            f"👾 **LzinhoBot**   ➡️  `{PURPLEBOT_VERSION}` \n"
             f"⚙️ **Telethon**      ➡️  `{version.__version__}` \n"
             f"🐍 **Python**         ➡️  `{python_version()}` \n"
             f"👤 **Usuário**       ➡️   `{DEFAULTUSER}` "
