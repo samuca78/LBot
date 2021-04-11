@@ -11,7 +11,7 @@ from userbot.events import register
 from userbot.modules.admin import get_user_from_event
 
 
-@register(outgoing=True, pattern=r"^\.useridid$")
+@register(outgoing=True, pattern=r"^\.userid$")
 async def useridgetter(target):
     """ For .userid command, returns the ID of the target user. """
     message = await target.get_reply_message()
