@@ -126,15 +126,21 @@ async def pipcheck(pip):
 async def amireallyalive(alive):
     """ For .alive command, check if the bot is running.  """
     output = (
+       file_id = _USER_CACHED_MEDIA
+    else:
+        reply_markup = none
+        file_id = _USER_CACHED_MEDIA
+        caption *= (
+           f"\n⚡ <a href='https://t.me/FourPlayGrupo'><b>FOUR_PLAY</b></a>"
+)
         "**Bot funcionando normalmente** \n"
         f"•` 🤖 LzinhoBot: \n`"
         f"** v{PURPLEBOT_VERSION} \n**"
         f"•` ⚙️ Telethon: \n`"
         f"** v{version.__version__} \n**"
         f"•` 🐍 Python: \n`"
-        f"** v{python_version()} \n**"
-         (f"\n⚡ <a href='https://t.me/FourPlayGrupo'><b>FOUR_PLAY</b></a>")
-
+        f"** v{python_version()} \n**
+        
     )
     if ALIVE_LOGO:
         try:
