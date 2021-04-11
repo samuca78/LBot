@@ -1,6 +1,6 @@
 # LzinhoBot userbot
 
-![logo](https://t.me/c/1378370752/2395)
+![logo](tg://openmessage?chat_id=550513299&message_id=7466)
 
 ```
 #include <std/disclaimer.h>
