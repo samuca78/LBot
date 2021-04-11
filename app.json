@@ -1,7 +1,7 @@
 {
   "name": "LzinhoBot",
   "description": "[LzinhoBot] Um userbot modular do Telegram em execução no Python 3.8 com um banco de dados sqlalchemy.",
-  "logo": "https://t.me/c/1378370752/2395",
+  "logo": "https://telegra.ph/file/0e927c66b95ea3092d5ca.jpg",
   "keywords": ["telegram", "userbot", "plugin", "modular", "productivity"],
   "repository": "https://github.com/samuca78/LzinhoBot",
   "website": "https://github.com/samuca78",
