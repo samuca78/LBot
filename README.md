@@ -22,8 +22,6 @@
 Maneira fácil de obter STRING_SESSION. Clique no botão e depois no botão de cor verde 'Executar'
 
 ### Executar no repl.it
-[![Run repl.it](https://img.shields.io/badge/run-string__session.py-blue?style=flat-square&logo=repl.it)](https://repl.it/@MoveAngel/UserbotSession?lite=1&outputonly=1) - MoveAngel
-
 [![Run repl.it](https://img.shields.io/badge/run-string__session.py-blue?style=flat-square&logo=repl.it)](https://repl.it/@kenhv/sessiongen) - KenHV
 
 ### ou execute em seu terminal
