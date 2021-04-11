@@ -127,11 +127,11 @@ async def amireallyalive(alive):
     """ For .alive command, check if the bot is running.  """
     output = (
         "**Bot funcionando normalmente** \n"
-        f"•`  🤖 LzinhoBot: \n`"
+        f"•` 🤖 LzinhoBot: \n`"
         f"** v{PURPLEBOT_VERSION} \n**"
-        f"•`  ⚙️ Telethon: \n`"
+        f"•` ⚙️ Telethon: \n`"
         f"** v{version.__version__} \n**"
-        f"•`  🐍 Python: \n`"
+        f"•` 🐍 Python: \n`"
         f"** v{python_version()} \n**"
 
     )
