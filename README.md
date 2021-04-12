@@ -1,5 +1,4 @@
 # LzinhoBot userbot
-[Aqui](google.com)
 
 ![logo](https://telegra.ph/file/0e927c66b95ea3092d5ca.jpg)
 
