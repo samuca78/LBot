@@ -134,7 +134,7 @@ async def set_afk(afk_e):
     if string:
         AFKREASON = string
         await afk_e.edit("**Agora eu estou ausente!**" f"\nMotivo: {string}")
-        print("(ᗒᗩᗕ)")
+
     else:
         await afk_e.edit("**Agora eu estou afk!**")
     if BOTLOG:
