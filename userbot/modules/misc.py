@@ -212,6 +212,7 @@ async def k(e):
     )
   time.sleep(5)
   "<code>kkk</code> \n"
+    )
 
 CMD_HELP.update(
     {
