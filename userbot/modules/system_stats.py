@@ -134,6 +134,7 @@ async def amireallyalive(alive):
   ⭕️   | Maintainer :  @laranjudo
   ▫️   | OrangeBot :   v{LBOT_VERSION}
        ➖➖➖➖➖➖➖ 
+       <b>          [...](https://t.me/LzinhoV)</b>
 """
     )
     if ALIVE_LOGO:
