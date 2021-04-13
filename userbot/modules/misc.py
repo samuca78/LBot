@@ -169,7 +169,7 @@ async def send(event):
     await event.edit(f"**Mensagem enviada para** `{chat.title}`**!**")
     
   
-@register(outgoing=True, pattern=r"^\kkk$")
+@register(outgoing=True, pattern=r"^\.k$")
 async def samu(e):
   await e.edit(
     "kkkkk \n"
