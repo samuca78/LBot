@@ -210,9 +210,6 @@ async def k(e):
   await e.edit(
     "kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk \n"
     )
-  time.sleep(5)
-  "<code>kkk</code> \n"
-    )
 
 CMD_HELP.update(
     {
