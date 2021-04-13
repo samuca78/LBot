@@ -182,9 +182,34 @@ async def k(e):
   await e.edit(
     "kkkkkkkkkkkk \n"
     )
-  time.sleep(3)
-  await e.delete()
-
+  time.sleep(1)
+  await e.edit(
+    "kkkkkkkkkkkkkkk \n
+    )
+  time.sleep(1)
+  await e.edit(
+    "kkkkkkkkkkkkkkkkkk \n"
+    )
+  time.sleep(1)
+  await e.edit(
+    "kkkkkkkkkkkkkkkkkkkkk \n"
+    )
+  time.sleep(1)
+  await e.edit(
+    "kkkkkkkkkkkkkkkkkkkkkkk \n"
+    )
+  time.sleep(1)
+  await e.edit(
+    "kkkkkkkkkkkkkkkkkkkkkkkkkk \n"
+    )
+  time.sleep(1)
+  await e.edit(
+    "kkkkkkkkkkkkkkkkkkkkkkkkkkkkk \n"
+    )
+  time.sleep(1)
+  await e.edit(
+    "kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk \n"
+    )
 
 CMD_HELP.update(
     {
