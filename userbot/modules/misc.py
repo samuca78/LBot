@@ -171,7 +171,7 @@ async def send(event):
     @register(outgoing=True, pattern=r"^\.samu$")
     async def samu(e):
       await e.edit(
-        "samuel é ruim de mais em python, mds \n"
+        "samuel \n"
         )
 
 
