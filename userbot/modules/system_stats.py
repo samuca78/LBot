@@ -130,7 +130,7 @@ async def amireallyalive(alive):
          "` Corra o risco. Se der certo,      \n`" 
          "` felicidade. Se não, sabedoria.    \n`"
         "**============================ \n**"
-        f"•** LzinhoBot                                 v{PURPLEBOT_VERSION} \n**"
+        f"•** LBot                                      v{PURPLEBOT_VERSION} \n**"
         f"•** Telethon                                  v{version.__version__} \n**"
         f"•** Python                                    v{python_version()} \n**"
         "**============================ \n**"
