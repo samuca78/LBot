@@ -173,9 +173,11 @@ async def samu(e):
   await e.edit(
     "`testanto` \n"
     )
-  .sleep 1
-  await e.edit()
+  await e.edit(
     "testando de novo \n"
+    )
+  await e.edit(
+    "**orange só dorme** \n"
     )
 
 
