@@ -170,7 +170,7 @@ async def send(event):
     
   
 @register(outgoing=True, pattern=r"^\.k$")
-async def samu(e):
+async def k(e):
   await e.edit(
     "kkkkk \n"
     )
@@ -182,6 +182,7 @@ async def samu(e):
   await e.edit(
     "kkkkkkkkkkkk \n"
     )
+  await e.delete(3)
 
 
 CMD_HELP.update(
