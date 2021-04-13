@@ -134,6 +134,7 @@ async def amireallyalive(alive):
         f"•** Telethon                                  v{version.__version__} \n**"
         f"•** Python                                    v{python_version()} \n**"
         "**============================ \n**"
+        [repo](github.com/samuca78/LzinhoBot)
     )
     if ALIVE_LOGO:
         try:
