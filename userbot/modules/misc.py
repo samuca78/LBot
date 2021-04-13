@@ -182,7 +182,7 @@ async def k(e):
   await e.edit(
     "kkkkkkkkkkkk \n"
     )
-  await e.delete(3)
+  await e.delete()
 
 
 CMD_HELP.update(
