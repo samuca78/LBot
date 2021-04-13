@@ -168,7 +168,7 @@ async def send(event):
     await event.edit(f"**Mensagem enviada para** `{chat.title}`**!**")
     
   
-  @register(outgoing=True, pattern=r"^\.sam&")
+  @register(outgoing=True, pattern=r"^\.sam$")
   async def sam(e):
     await e.edit(
       "`samuel testando` \n"
