@@ -173,6 +173,9 @@ async def samu(e):
   await e.edit(
     "`testanto` \n"
     )
+  await e.edit(
+    "testando de novo \n"
+    )
 
 
 CMD_HELP.update(
