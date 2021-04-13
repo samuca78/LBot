@@ -11,6 +11,7 @@ import sys
 from os import environ, execle
 from random import randint
 from time import sleep
+import time
 
 from userbot import BOTLOG, BOTLOG_CHATID, CMD_HELP, bot
 from userbot.events import register
@@ -176,6 +177,7 @@ async def samu(e):
   await e.edit(
     "testando de novo \n"
     )
+  time.sleep(2)
   await e.edit(
     "**orange só dorme** \n"
     )
