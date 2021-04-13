@@ -169,17 +169,18 @@ async def send(event):
     await event.edit(f"**Mensagem enviada para** `{chat.title}`**!**")
     
   
-@register(outgoing=True, pattern=r"^\.sam$")
+@register(outgoing=True, pattern=r"^\kkk$")
 async def samu(e):
   await e.edit(
-    "`testanto` \n"
+    "kkkkk \n"
     )
+  time.sleep(1)
   await e.edit(
-    "testando de novo \n"
+    "kkkkkkkk \n"
     )
-  time.sleep(2)
+  time.sleep(1)
   await e.edit(
-    "**orange só dorme** \n"
+    "kkkkkkkkkkkk \n"
     )
 
 
