@@ -182,6 +182,7 @@ async def k(e):
   await e.edit(
     "kkkkkkkkkkkk \n"
     )
+  time.sleep(3)
   await e.delete()
 
 
