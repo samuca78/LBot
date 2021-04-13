@@ -13,7 +13,7 @@ from shutil import which
 
 from telethon import version
 
-from userbot import ALIVE_LOGO, ALIVE_NAME, CMD_HELP, FNIXBOT_VERSION, bot
+from userbot import ALIVE_LOGO, ALIVE_NAME, CMD_HELP, LBOT_VERSION, bot
 from userbot.events import register
 
 # ================= CONSTANT =================
@@ -132,7 +132,7 @@ async def amireallyalive(alive):
   ⭕️   | Python :    v3.9.1
   ⭕️   | Pyrogram :    v1.1.13
   ⭕️   | Maintainer :  @laranjudo
-  ▫️   | OrangeBot :   v{FNIXBOT_VERSION}
+  ▫️   | OrangeBot :   v{LBOT_VERSION}
        ➖➖➖➖➖➖➖ 
 """
     )
