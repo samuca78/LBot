@@ -176,7 +176,7 @@ async def k(e):
     )
   time.sleep(1)
   await e.edit(
-    "<code>kkkkkkkk</code> \n"
+    "kkkkkkkk \n"
     )
   time.sleep(1)
   await e.edit(
