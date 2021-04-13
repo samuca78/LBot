@@ -39,7 +39,7 @@ wget https://raw.githubusercontent.com/thewhiteharlot/PurpleBot/master/terminal_
 
 Certifique-se de ter uma conta do heroku e siga todos os passos necessários.
 
-<p align="left"><a href="https://heroku.com/deploy?template=https://github.com/samuca78/LzinhoBot"> <img src="https://www.herokucdn.com/deploy/button.svg" alt="Criar app no Heroku" /></a></p>
+<p align="left"><a href="https://heroku.com/deploy?template=https://github.com/samuca78/LBot"> <img src="https://www.herokucdn.com/deploy/button.svg" alt="Criar app no Heroku" /></a></p>
 
 
 ## Créditos
