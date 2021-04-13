@@ -9,7 +9,7 @@ from userbot.utils import time_formatter
        )
 
 
-register(outgoing=True, pattern=r"^\.samu$")
+@register(outgoing=True, pattern=r"^\.samu$")
 async def samu(e):
   await e.edir(
     "samuel é ruim, ruim em python, mds"
