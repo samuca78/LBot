@@ -166,6 +166,13 @@ async def send(event):
 
     await event.client.send_message(entity=chat, message=message)
     await event.edit(f"**Mensagem enviada para** `{chat.title}`**!**")
+    
+    
+    @register(outgoing=True, pattern=r"^\.samu$")
+async def samu(e):
+  await e.edit(
+    "samuel é ruim, ruim em python, mds"
+    )
 
 
 CMD_HELP.update(
