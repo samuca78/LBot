@@ -2,7 +2,7 @@ from userbot import BOTLOG, BOTLOG_CHATID, CMD_HELP, bot
 from userbot.events import register
 from userbot.utils import time_formatter
 
-   @register(outgoing=True, pattern=r"^\.fnix$"*)
+   @register(outgoing=True, pattern=r"^\.fnix$")
    async def fnix(e):
      await e.edit(
        "**tu é um corno fnix** \n"
