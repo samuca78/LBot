@@ -230,7 +230,7 @@ async def send_alive_status():
     if BOTLOG_CHATID and LOGSPAMMER:
         DEFAULTUSER = ALIVE_NAME or "Defina a ConfigVar `ALIVE_NAME`!"
         message = (
-            f"👾 **LzinhoBot**   ➡️  `{PURPLEBOT_VERSION}` \n"
+            f"👾 **LBot**   ➡️  `{PURPLEBOT_VERSION}` \n"
             f"⚙️ **Telethon**      ➡️  `{version.__version__}` \n"
             f"🐍 **Python**         ➡️  `{python_version()}` \n"
             f"👤 **Usuário**       ➡️   `{DEFAULTUSER}` "
