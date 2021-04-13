@@ -136,7 +136,7 @@ async def set_afk(afk_e):
         await afk_e.edit("**Agora eu estou ausente!**" f"\nMotivo: {string}")
 
     else:
-        await afk_e.edit("**Agora eu estou afk!**")
+        await afk_e.edit("**Agora eu estou ausente!**")
     if BOTLOG:
         await afk_e.client.send_message(BOTLOG_CHATID, "#AFK\nVocê ficou AFK!")
     ISAFK = True
