@@ -81,7 +81,7 @@ HEROKU_APP_NAME = os.environ.get("HEROKU_APP_NAME") or None
 HEROKU_API_KEY = os.environ.get("HEROKU_API_KEY") or None
 
 # Custom (forked) repo URL and BRANCH for updater.
-UPSTREAM_REPO_URL = "https://github.com/samuca78/LzinhoBot.git"
+UPSTREAM_REPO_URL = "https://github.com/samuca78/LBot.git"
 UPSTREAM_REPO_BRANCH = "master"
 
 # Console verbose logging
