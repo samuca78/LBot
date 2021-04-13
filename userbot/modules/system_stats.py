@@ -127,14 +127,13 @@ async def amireallyalive(alive):
     """ For .alive command, check if the bot is running.  """
     output = (
         "                                   "       
-        f"""<b>OrangeBot funcionando perfeitamente</b>"
+        f"""**LBot funcionando perfeitamente**"
        ➖➖➖➖➖➖➖ 
   ⭕️   | Python :    v3.9.1
   ⭕️   | Pyrogram :    v1.1.13
   ⭕️   | Maintainer :  @laranjudo
-  ▫️   | OrangeBot :   v{LBOT_VERSION}
+  ▫️   | LBot :       v{LBOT_VERSION}
        ➖➖➖➖➖➖➖ 
-       <b>          [...](https://t.me/LzinhoV)</b>
 """
     )
     if ALIVE_LOGO:
