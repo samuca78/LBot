@@ -134,8 +134,6 @@ async def amireallyalive(alive):
         f"•** Telethon                                  v{version.__version__} \n**"
         f"•** Python                                    v{python_version()} \n**"
         "**============================ \n**"
-  time.sleep(5)
-  await alive.delete()
     )
     if ALIVE_LOGO:
         try:
