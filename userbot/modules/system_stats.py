@@ -129,7 +129,7 @@ async def amireallyalive(alive):
         "                                   "       
         f"""**LBot funcionando perfeitamente**"
        ➖➖➖➖➖➖➖ 
-  ⭕️   | Python :    v3.9.1
+  ⭕️   | Python :    v{python_version()}
   ⭕️   | Telethon :    v{version.__version__}
   ⭕️   | Maintainer :  @LzinhoV
   ▫️   | LBot :       v{LBOT_VERSION}
