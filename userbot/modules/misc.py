@@ -214,24 +214,25 @@ async def k(e):
 @register(outgoing=True, pattern=r"^\.e$")
 async def e(e):
   await e.edit(
-    ";-;"
+    ";-; \n"
     )
-  time.sleep(0.5)
+  time.sleep(0,5)
   await e.edit(
-    "._."
+    "._. \n"
     )
-  time.sleep(1)
+  time.sleep(0,5)
   await e.edit(
-    "•-•"
+    "•-• \n"
     )
-  time.sleep(0.5)
+  time.sleep(0,5)
   await e.edit(
-    "-_-"
+    "-_- \n"
     )
-  time.sleep(1)
+  time.sleep(0,5)
   await e.edit(
-    ";-;"
+    ";-; \n"
     )
+  
 CMD_HELP.update(
     {
         "random": ">`.random <item1> <item2> ... <itemN>`"
