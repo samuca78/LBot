@@ -130,8 +130,8 @@ async def amireallyalive(alive):
         f"""**LBot funcionando perfeitamente**"
        ➖➖➖➖➖➖➖ 
   ⭕️   | Python :    v3.9.1
-  ⭕️   | Pyrogram :    v1.1.13
-  ⭕️   | Maintainer :  @laranjudo
+  ⭕️   | Telethon :    v{version.__version__}
+  ⭕️   | Maintainer :  @LzinhoV
   ▫️   | LBot :       v{LBOT_VERSION}
        ➖➖➖➖➖➖➖ 
 """
