@@ -216,19 +216,19 @@ async def e(e):
   await e.edit(
     ";-; \n"
     )
-  time.sleep(0,5)
+  time.sleep(0.5)
   await e.edit(
     "._. \n"
     )
-  time.sleep(0,5)
+  time.sleep(0.5)
   await e.edit(
     "•-• \n"
     )
-  time.sleep(0,5)
+  time.sleep(0.5)
   await e.edit(
     "-_- \n"
     )
-  time.sleep(0,5)
+  time.sleep(1)
   await e.edit(
     ";-; \n"
     )
