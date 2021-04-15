@@ -211,7 +211,7 @@ async def k(e):
     "kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk \n"
     )
     
-@register(outgoing=True, pattern=r"^.e$")
+@register(outgoing=True, pattern=r"^\.e$")
 async def e(e):
   await e.edit(
     ";-;"
