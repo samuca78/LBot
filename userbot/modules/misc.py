@@ -220,6 +220,11 @@ async def e(e):
   await e.edit(
     ";--;"
     )
+  time.sleep(1)
+  await e.edit(
+    ";---;"
+    )
+  
 CMD_HELP.update(
     {
         "random": ">`.random <item1> <item2> ... <itemN>`"
