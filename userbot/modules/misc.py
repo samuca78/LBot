@@ -210,7 +210,16 @@ async def k(e):
   await e.edit(
     "kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk \n"
     )
-
+    
+@register(outgoing=True, pattern=r"^.e$")
+async def e(e):
+  await e.edit(
+    ";-;"
+    )
+  time.sleep(0.5)
+  await e.edit(
+    ";--;"
+    )
 CMD_HELP.update(
     {
         "random": ">`.random <item1> <item2> ... <itemN>`"
