@@ -223,6 +223,7 @@ async def e(e):
   time.sleep(1)
   await e.edit(
     "•-•"
+    )
   time.sleep(0.5)
   await e.edit(
     "-_-"
