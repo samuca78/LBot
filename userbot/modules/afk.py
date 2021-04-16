@@ -5,6 +5,12 @@
 #
 """ Userbot module which contains afk-related commands """
 
+from pyUltroid.functions.pmpermit_db import *
+from telethon import events
+from telethon.tl.functions.account import GetPrivacyRequest
+from telethon.tl.types import InputPrivacyKeyStatusTimestamp, PrivacyValueAllowAll
+
+
 import time
 from asyncio import sleep
 from random import choice, randint
