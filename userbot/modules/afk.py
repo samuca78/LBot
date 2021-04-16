@@ -7,6 +7,7 @@
 
 from telethon.tl import functions, types
 
+from userge.utils import time_formatter
 
 global afk_time  # pylint:disable=E0602
 afk_time = None
@@ -67,6 +68,7 @@ async def mention_afk(mention):
     global USERS
     global ISAFK
     global afk_time
+    afk_time = time_formatter(round(time.time() - TIME))
     if mention.message.mentioned and ISAFK:
         is_bot = False
         if (sender := await mention.get_sender()) :
