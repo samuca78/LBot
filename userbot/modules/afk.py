@@ -24,7 +24,7 @@ from userbot import (  # noqa
 )
 from userbot.events import register
 
-from . import global afk_time
+import afk_time
 afk_time = None
 
 
