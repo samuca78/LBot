@@ -5,6 +5,7 @@
 #
 """ Userbot module which contains afk-related commands """
 
+import time
 from asyncio import sleep
 from random import choice, randint
 from datetime import datetime
