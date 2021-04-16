@@ -5,16 +5,9 @@
 #
 """ Userbot module which contains afk-related commands """
 
-from telethon.tl import functions, types
-
-
-global afk_time  # pylint:disable=E0602
-afk_time = None
-
 import time
 from asyncio import sleep
 from random import choice, randint
-from datetime import datetime
 
 from telethon.events import StopPropagation
 
@@ -66,18 +59,13 @@ async def mention_afk(mention):
     global COUNT_MSG
     global USERS
     global ISAFK
-    global afk_time
     if mention.message.mentioned and ISAFK:
-      afk_end = back_alive.replace(microsecond=0)
-    if afk_start != {}:
-        total_afk_time = str(afk_end - afk_start)
         is_bot = False
         if (sender := await mention.get_sender()) :
             is_bot = sender.bot
         if not is_bot and mention.sender_id not in USERS:
             if AFKREASON:
-                await mention.reply("Estou ausente nesse momento." f"\nMotivo **{AFKREASON}**"
-                  f"Last Seen: `{afk_time} ago`")
+                await mention.reply("Estou ausente nesse momento." f"\nMotivo **{AFKREASON}**")
             else:
                 await mention.reply(str(choice(AFKSTR)))
             USERS.update({mention.sender_id: 1})
