@@ -5,6 +5,11 @@
 #
 """ Userbot module which contains afk-related commands """
 
+from telethon.tl import functions, types
+
+
+global afk_time  # pylint:disable=E0602
+afk_time = None
 
 import time
 from asyncio import sleep
