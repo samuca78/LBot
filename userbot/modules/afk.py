@@ -23,19 +23,8 @@ from userbot import (  # noqa
 )
 from userbot.events import register
 
-from . import *
-
-global USER_AFK
-global afk_time
-global last_afk_message
-global last_afk_msg
-global afk_start
-global afk_end
-USER_AFK = {}
+from . import global afk_time
 afk_time = None
-last_afk_message = {}
-last_afk_msg = {}
-afk_start = {}
 
 
 # ========================= CONSTANTS ============================
