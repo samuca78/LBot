@@ -14,7 +14,7 @@ from userbot.events import register
 DEFAULTUSER = ALIVE_NAME or "Defina a ConfigVar 'ALIVE_NAME' !"
 # ===================================≠=≠========
 
-@register(outgoing=True, pattern=r"^\.of$")
+@register(outgoing=True, pattern=r"^.(of|af)$")
 async def amireallyalive(alive):
   """ Para o comando .alive, verifique se o bot está rodando. """
   output = (
