@@ -23,5 +23,4 @@ async def amireallyalive(alive):
   • user: {DEFAULTUSER}
 """
   )
-  else:
-    await alive.edit(output)
+  await alive.edit(output)
