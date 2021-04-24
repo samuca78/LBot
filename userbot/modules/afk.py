@@ -101,7 +101,7 @@ async def mention_afk(mention):
                 if USERS[mention.sender_id] % randint(2, 4) == 0:
                     if AFKREASON:
                         await mention.reply(
-                            f"Ainda eu estou ausente.\
+                            f"Ainda eu estou ausente.\n tempo: {afk_time}
                                 \nMotivo: **{AFKREASON}**"
                         )
                     else:
