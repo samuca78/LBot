@@ -65,7 +65,7 @@ async def mention_afk(mention):
             is_bot = sender.bot
         if not is_bot and mention.sender_id not in USERS:
             if AFKREASON:
-                await mention.reply("Estou ausente nesse momento." f"\nMotivo **{AFKREASON}**")
+                await mention.reply("• `Oi! Neste exato momento eu estou ausente`" f"\n `Motivo:` **{AFKREASON}**")
             else:
                 await mention.reply(str(choice(AFKSTR)))
             USERS.update({mention.sender_id: 1})
