@@ -90,6 +90,7 @@ async def mention_afk(mention):
         is_bot = False
         if (sender := await mention.get_sender()) :
             is_bot = sender.bot
+            afk_time = datetime.datetime.now()  # pylint:disable=E0602
         if not is_bot and mention.sender_id not in USERS:
             if AFKREASON:
                 await mention.reply("• `Oi! Neste exato momento eu estou ausente`" f"\n time: {afk_time} `Motivo:` **{AFKREASON}**")
