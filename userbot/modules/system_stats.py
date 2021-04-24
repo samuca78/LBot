@@ -11,6 +11,8 @@ from os import remove
 from platform import python_version, uname
 from shutil import which
 
+from pyrogram.types import InlineKeyboardMarkup
+
 from telethon import version
 
 from userbot import ALIVE_LOGO, ALIVE_NAME, CMD_HELP, LBOT_VERSION, bot
@@ -134,8 +136,15 @@ async def amireallyalive(alive):
   ⭕️   | Maintainer :  @LzinhoV
   ▫️   | LBot :       v{LBOT_VERSION}
        ➖➖➖➖➖➖➖ 
-       [repo](buttonurl:https://github.com/samuca78/LBot)
 """
+    else:
+      markup = InlineKeyboardMarkup([
+        [
+          InlineKeyboardButton(text="repo", url="https://github.com/samuca7samuca78"),
+          InlineKeyboardButton(text="repo", url="https://github.com/samuca7samuca78"),
+          ],
+          [InlineKeyboardButton(text="repo", url="https://github.com/samuca7samuca78")]
+          ])
     )
     if ALIVE_LOGO:
         try:
