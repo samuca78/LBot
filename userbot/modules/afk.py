@@ -87,8 +87,9 @@ async def mention_afk(mention):
     afk_start = start_1.replace(microsecond=0)
     if mention.message.mentioned and ISAFK:
         is_bot = False
+        if isinstance(last_seen_status.rules, types.PrivacyValueAllowAll):
+          afk_time = datetime.datetime.now()  # pylint:disable=E0602
         if (sender := await mention.get_sender()) :
-            afk_time = datetime.datetime.now()  # pylint:disable=E0602
             is_bot = sender.bot
         if not is_bot and mention.sender_id not in USERS:
             if AFKREASON:
