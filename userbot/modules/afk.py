@@ -8,7 +8,7 @@
 import time
 from asyncio import sleep
 from random import choice, randint
-
+from datetime import datetime
 
 
 from telethon.tl import functions, types
@@ -83,6 +83,7 @@ async def mention_afk(mention):
     if mention.message.mentioned and ISAFK:
         is_bot = False
         if (sender := await mention.get_sender()) :
+            afk_time = datetime.datetime.now()  # pylint:disable=E0602
             is_bot = sender.bot
         if not is_bot and mention.sender_id not in USERS:
             if AFKREASON:
