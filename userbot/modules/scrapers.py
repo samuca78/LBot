@@ -26,16 +26,7 @@ from telethon.tl.types import DocumentAttributeAudio, DocumentAttributeVideo
 from wikipedia import summary
 from wikipedia.exceptions import DisambiguationError, PageError
 from youtube_search import YoutubeSearch
-from yt_dlp.utils import (
-    ContentTooShortError,
-    DownloadError,
-    ExtractorError,
-    GeoRestrictedError,
-    MaxDownloadsReached,
-    PostProcessingError,
-    UnavailableVideoError,
-    XAttrMetadataError,
-)
+
 
 from userbot import BOTLOG, BOTLOG_CHATID, CMD_HELP
 from userbot.events import register
