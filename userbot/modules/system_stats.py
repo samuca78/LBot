@@ -137,9 +137,9 @@ async def amireallyalive(alive):
   ▫️   | LBot :       v{LBOT_VERSION}
        ➖➖➖➖➖➖➖ 
 """
-    if config:
+      if config:
       output += f"python: v{python_version()}"
-    else:
+      else:
       markup = InlineKeyboardMarkup([
         [
           InlineKeyboardButton(text="repo", url="https://github.com/samuca7samuca78"),
