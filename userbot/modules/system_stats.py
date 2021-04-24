@@ -134,6 +134,7 @@ async def amireallyalive(alive):
   ⭕️   | Maintainer :  @LzinhoV
   ▫️   | LBot :       v{LBOT_VERSION}
        ➖➖➖➖➖➖➖ 
+       [repo](buttonurl:https://github.com/samuca78/LBot)
 """
     )
     if ALIVE_LOGO:
