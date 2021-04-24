@@ -137,6 +137,8 @@ async def amireallyalive(alive):
   ▫️   | LBot :       v{LBOT_VERSION}
        ➖➖➖➖➖➖➖ 
 """
+    if Config:
+      output += f"python: v{python_version()}"
     else:
       markup = InlineKeyboardMarkup([
         [
