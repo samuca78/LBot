@@ -79,6 +79,7 @@ async def mention_afk(mention):
     global afk_time # pylint:disable=E0602
     global afk_start
     afk_time = None
+    start_1 = datetime.now()
     afk_start = start_1.replace(microsecond=0)
     if mention.message.mentioned and ISAFK:
         is_bot = False
