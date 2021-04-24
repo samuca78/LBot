@@ -9,6 +9,23 @@ import time
 from asyncio import sleep
 from random import choice, randint
 
+
+
+from telethon.tl import functions, types
+
+
+global USER_AFK  # pylint:disable=E0602
+global afk_time  # pylint:disable=E0602
+global last_afk_message  # pylint:disable=E0602
+global afk_start
+global afk_end
+USER_AFK = {}
+afk_time = None
+last_afk_message = {}
+afk_start = {}
+
+
+
 from telethon.events import StopPropagation
 
 from userbot import (  # noqa
@@ -59,13 +76,17 @@ async def mention_afk(mention):
     global COUNT_MSG
     global USERS
     global ISAFK
+    global afk_time # pylint:disable=E0602
+    global afk_start
+    afk_time = None
+    afk_start = start_1.replace(microsecond=0)
     if mention.message.mentioned and ISAFK:
         is_bot = False
         if (sender := await mention.get_sender()) :
             is_bot = sender.bot
         if not is_bot and mention.sender_id not in USERS:
             if AFKREASON:
-                await mention.reply("• `Oi! Neste exato momento eu estou ausente`" f"\n `Motivo:` **{AFKREASON}**")
+                await mention.reply("• `Oi! Neste exato momento eu estou ausente`" f"\n time: {afk_time} `Motivo:` **{AFKREASON}**")
             else:
                 await mention.reply(str(choice(AFKSTR)))
             USERS.update({mention.sender_id: 1})
