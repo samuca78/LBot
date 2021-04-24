@@ -137,13 +137,6 @@ async def amireallyalive(alive):
   ▫️   | LBot :       v{LBOT_VERSION}
        ➖➖➖➖➖➖➖ 
 """
-        markup = InlineKeyboardMarkup([
-        [
-          InlineKeyboardButton(text="repo", url="https://github.com/samuca7samuca78"),
-          InlineKeyboardButton(text="repo", url="https://github.com/samuca7samuca78"),
-          ],
-          [InlineKeyboardButton(text="repo", url="https://github.com/samuca7samuca78")]
-          ])
     )
     if ALIVE_LOGO:
         try:
