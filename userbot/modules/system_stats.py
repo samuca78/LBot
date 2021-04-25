@@ -11,7 +11,6 @@ from os import remove
 from platform import python_version, uname
 from shutil import which
 
-from pyrogram.types import InlineKeyboardMarkup
 
 from telethon import version
 
