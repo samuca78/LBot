@@ -90,7 +90,7 @@ async def mention_afk(mention):
     start_1 = datetime.now()
     afk_start = start_1.replace(microsecond=0)
     if mention.message.mentioned and ISAFK:
-      last_seen_status = await ultroid_bot(
+      last_seen_status = await mention(
             GetPrivacyRequest(InputPrivacyKeyStatusTimestamp()),
         )
         is_bot = False
