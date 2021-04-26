@@ -15,21 +15,6 @@ from datetime import datetime
 from telethon import events
 
 
-from telethon.tl import functions, types
-
-
-global USER_AFK  # pylint:disable=E0602
-global afk_time  # pylint:disable=E0602
-global last_afk_message  # pylint:disable=E0602
-global afk_start
-global afk_end
-USER_AFK = {}
-afk_time = None
-last_afk_message = {}
-afk_start = {}
-
-
-
 from telethon.events import StopPropagation
 
 from userbot import (  # noqa
@@ -80,27 +65,13 @@ async def mention_afk(mention):
     global COUNT_MSG
     global USERS
     global ISAFK
-    global afk_time # pylint:disable=E0602
-    global last_afk_message  # pylint:disable=E0602
-    global afk_start
-    global afk_end
-    afk_time = None
-    last_afk_message = {}
-    afk_end = {}
-    start_1 = datetime.now()
-    afk_start = start_1.replace(microsecond=0)
     if mention.message.mentioned and ISAFK:
-      last_seen_status = await mention(
-            GetPrivacyRequest(InputPrivacyKeyStatusTimestamp()),
-        )
         is_bot = False
-        if isinstance(last_seen_status.rules, types.PrivacyValueAllowAll):
-            afk_time = datetime.datetime.now()
         if (sender := await mention.get_sender()) :
             is_bot = sender.bot
         if not is_bot and mention.sender_id not in USERS:
             if AFKREASON:
-                await mention.reply("• `Oi! Neste exato momento eu estou ausente`" f"\n time: {afk_time} `Motivo:` **{AFKREASON}**")
+                await mention.reply("• `Oi! Neste exato momento eu estou ausente`" f"\n `Motivo:` **{AFKREASON}**")
             else:
                 await mention.reply(str(choice(AFKSTR)))
             USERS.update({mention.sender_id: 1})
@@ -109,8 +80,7 @@ async def mention_afk(mention):
                 if USERS[mention.sender_id] % randint(2, 4) == 0:
                     if AFKREASON:
                         await mention.reply(
-                            f"Ainda eu estou ausente." 
-                            f"tempo: {afk_time}" 
+                            f"Ainda eu estou ausente."
                             f"\nMotivo: **{AFKREASON}**"
                         )
                     else:
