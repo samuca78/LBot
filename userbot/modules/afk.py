@@ -89,7 +89,7 @@ async def mention_afk(mention):
     afk_end = {}
     start_1 = datetime.now()
     afk_start = start_1.replace(microsecond=0)
-    afk_time = afk_start
+    total_afk_time = (afk_end - afk_start)
     if mention.message.mentioned and ISAFK:
         is_bot = False
         if (sender := await mention.get_sender()) :
