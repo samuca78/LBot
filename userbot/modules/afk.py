@@ -89,14 +89,14 @@ async def mention_afk(mention):
     afk_end = {}
     start_1 = datetime.now()
     afk_start = start_1.replace(microsecond=0)
-    total_afk_time = (afk_end - afk_start)
+    afk_time = afk_start
     if mention.message.mentioned and ISAFK:
         is_bot = False
         if (sender := await mention.get_sender()) :
             is_bot = sender.bot
         if not is_bot and mention.sender_id not in USERS:
             if AFKREASON:
-                await mention.reply("• `Oi! Neste exato momento eu estou ausente`" f"\n time: {total_afk_time} `Motivo:` **{AFKREASON}**")
+                await mention.reply("• `Oi! Neste exato momento eu estou ausente`" f"\n time: {afk_time} `Motivo:` **{AFKREASON}**")
             else:
                 await mention.reply(str(choice(AFKSTR)))
             USERS.update({mention.sender_id: 1})
