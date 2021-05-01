@@ -128,12 +128,12 @@ async def amireallyalive(alive):
     """ For .alive command, check if the bot is running.  """
     output = (
         "                                   "       
-        f"""**LBot funcionando perfeitamente**
+        f"""**NoteBot funcionando perfeitamente**
        ➖➖➖➖➖➖➖ 
   ⭕️   | Python :    v{python_version()}
   ⭕️   | Telethon :    v{version.__version__}
   ⭕️   | Maintainer :  @LzinhoV
-  ▫️   | LBot :       v{LBOT_VERSION}
+  ▫️   | NoteBot :       v{LBOT_VERSION}
        ➖➖➖➖➖➖➖ 
 """
     )
