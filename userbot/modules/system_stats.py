@@ -132,7 +132,7 @@ async def amireallyalive(alive):
        ➖➖➖➖➖➖➖ 
   ⭕️   | Python :    v{python_version()}
   ⭕️   | Telethon :    v{version.__version__}
-  ⭕️   | Maintainer :  @LzinhoV
+  ⭕️   | Maintainer :  @NoteZV
   ▫️   | NoteBot :       v{LBOT_VERSION}
        ➖➖➖➖➖➖➖ 
 """
