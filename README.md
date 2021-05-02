@@ -1,6 +1,6 @@
-# LBot userbot
+# NoteBot userbot
 
-![logo](https://telegra.ph/file/0e927c66b95ea3092d5ca.jpg)
+![logo](https://telegra.ph/file/56e32005fdc92cd3b1fa1.jpg)
 
 ```
 #include <std/disclaimer.h>
